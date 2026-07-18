@@ -76,6 +76,10 @@
     .card-bd ul li a { font-weight: 700; display: block; }
     .card-link-desc { display: block; font-size: 11.5px; margin-top: 2px; line-height: 1.35; color: #4A6A8A; }
     .chapter-cards dl.card-group { display: none !important; }
+    /* Equal-height cards — body fills full card */
+    .chapter-cards-grid { align-items: stretch; }
+    .intro-card-wrap, .phase-card-wrap { display: flex; flex-direction: column; height: 100%; }
+    .card-bd { flex: 1; }
     </style>
 </head>
 
