@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="520" viewBox="0 0 840 520" font-family="Segoe UI, Calibri, Arial, sans-serif">
+<rect width="840" height="520" fill="#F4F7FA" rx="12"/>
+<rect x="0" y="0" width="840" height="72" fill="#0A2347" rx="12"/><rect x="0" y="60" width="840" height="12" fill="#0A2347"/><rect x="0" y="69" width="840" height="3" fill="#09A8B8"/>
+<text x="24" y="32" font-size="18" font-weight="bold" fill="#FFFFFF" letter-spacing="0.3">How Model Gateways Connect Agents</text>
+<text x="24" y="52" font-size="11" fill="#8AACCC">Agents, the Agent Cloud data plane, the control plane, and LLMs</text>
+<rect x="24" y="96" width="170" height="110" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<rect x="24" y="96" width="170" height="28" rx="8" fill="#0B3A72"/><rect x="24" y="114" width="170" height="10" fill="#0B3A72"/>
+<text x="109.0" y="114.0" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Custom agents</text>
+<text x="109" y="148" font-size="10.5" fill="#1A2A3A" text-anchor="middle">LangChain</text>
+<text x="109" y="164" font-size="10.5" fill="#1A2A3A" text-anchor="middle">n8n</text>
+<rect x="24" y="236" width="170" height="120" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<rect x="24" y="236" width="170" height="28" rx="8" fill="#0B3A72"/><rect x="24" y="254" width="170" height="10" fill="#0B3A72"/>
+<text x="109.0" y="254.0" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Cloud agents</text>
+<text x="109" y="288" font-size="10.5" fill="#1A2A3A" text-anchor="middle">Vertex</text>
+<text x="109" y="304" font-size="10.5" fill="#1A2A3A" text-anchor="middle">AI Foundry</text>
+<text x="109" y="320" font-size="10.5" fill="#1A2A3A" text-anchor="middle">Copilot</text>
+<rect x="24" y="376" width="170" height="100" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<rect x="24" y="376" width="170" height="28" rx="8" fill="#0B3A72"/><rect x="24" y="394" width="170" height="10" fill="#0B3A72"/>
+<text x="109.0" y="394.0" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Endpoint agents</text>
+<text x="109" y="428" font-size="10.5" fill="#1A2A3A" text-anchor="middle">Cursor</text>
+<text x="109" y="444" font-size="10.5" fill="#1A2A3A" text-anchor="middle">Claude</text>
+<line x1="194" y1="150" x2="330" y2="150" stroke="#B0C8E0" stroke-width="2"/>
+<line x1="194" y1="296" x2="330" y2="296" stroke="#B0C8E0" stroke-width="2"/>
+<line x1="194" y1="426" x2="330" y2="426" stroke="#B0C8E0" stroke-width="2"/>
+<line x1="330" y1="150" x2="330" y2="426" stroke="#B0C8E0" stroke-width="2"/>
+<line x1="330" y1="296" x2="400" y2="296" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="400.0,296.0 391.9,299.9 391.9,292.1" fill="#B0C8E0"/>
+<text x="262" y="142" font-size="10" fill="#4A6A8A" text-anchor="middle">Prompt →</text>
+<text x="262" y="172" font-size="10" fill="#4A6A8A" text-anchor="middle">← Response</text>
+<text x="262" y="288" font-size="10" fill="#4A6A8A" text-anchor="middle" font-weight="bold">API</text>
+<text x="262" y="316" font-size="9.5" fill="#4A6A8A" text-anchor="middle">analyze-tool-execution</text>
+<text x="262" y="418" font-size="10" fill="#4A6A8A" text-anchor="middle" font-weight="bold">MDM</text>
+<text x="262" y="446" font-size="10" fill="#4A6A8A" text-anchor="middle">Monitor tools</text>
+<rect x="380" y="92" width="260" height="64" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<text x="510" y="118" font-size="13" fill="#0A2347" text-anchor="middle" font-weight="bold">Rubrik Agent Cloud</text>
+<text x="510" y="138" font-size="10.5" fill="#4A6A8A" text-anchor="middle">Control plane</text>
+<rect x="400" y="256" width="220" height="80" rx="8" fill="#075F68" stroke="#075F68" stroke-width="1"/>
+<text x="510" y="290" font-size="13" fill="#FFFFFF" text-anchor="middle" font-weight="bold">AI Gateway</text>
+<text x="510" y="314" font-size="11" fill="#FFFFFF" text-anchor="middle">Webhook / Processor</text>
+<line x1="450" y1="156" x2="450" y2="256" stroke="#09A8B8" stroke-width="2"/>
+<polygon points="450.0,256.0 446.1,247.9 453.9,247.9" fill="#09A8B8"/>
+<text x="444" y="206" font-size="10" fill="#4A6A8A" text-anchor="end">Configure</text>
+<text x="444" y="219" font-size="10" fill="#4A6A8A" text-anchor="end">policies</text>
+<line x1="570" y1="256" x2="570" y2="156" stroke="#09A8B8" stroke-width="2"/>
+<polygon points="570.0,156.0 573.9,164.1 566.1,164.1" fill="#09A8B8"/>
+<text x="576" y="206" font-size="10" fill="#4A6A8A" text-anchor="start">Metadata</text>
+<text x="510" y="362" font-size="10.5" fill="#4A6A8A" text-anchor="middle">Rubrik Agent Cloud data plane</text>
+<text x="510" y="377" font-size="10.5" fill="#4A6A8A" text-anchor="middle">(SaaS or customer VPC hosted)</text>
+<rect x="700" y="196" width="116" height="200" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<rect x="700" y="196" width="116" height="28" rx="8" fill="#0B3A72"/><rect x="700" y="214" width="116" height="10" fill="#0B3A72"/>
+<text x="758.0" y="214.0" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">LLMs</text>
+<text x="758" y="254" font-size="11" fill="#1A2A3A" text-anchor="middle">OpenAI</text>
+<text x="758" y="280" font-size="11" fill="#1A2A3A" text-anchor="middle">Anthropic</text>
+<text x="758" y="306" font-size="11" fill="#1A2A3A" text-anchor="middle">Meta</text>
+<text x="758" y="332" font-size="11" fill="#1A2A3A" text-anchor="middle">Mistral</text>
+<line x1="620" y1="284" x2="700" y2="284" stroke="#0A2347" stroke-width="2"/>
+<polygon points="700.0,284.0 691.9,287.9 691.9,280.1" fill="#0A2347"/>
+<text x="660" y="277" font-size="10" fill="#4A6A8A" text-anchor="middle">Prompt</text>
+<line x1="700" y1="314" x2="620" y2="314" stroke="#0A2347" stroke-width="2"/>
+<polygon points="620.0,314.0 628.1,310.1 628.1,317.9" fill="#0A2347"/>
+<text x="660" y="330" font-size="10" fill="#4A6A8A" text-anchor="middle">Response</text>
+<rect x="0" y="498" width="840" height="22" fill="#0A2347"/><rect x="0" y="498" width="840" height="22" fill="#0A2347" rx="12"/><rect x="0" y="498" width="840" height="12" fill="#0A2347"/>
+<text x="24" y="512" font-size="9" fill="#8AACCC">Rubrik Security Cloud — Agent Cloud gateway overview</text>
+<rect width="840" height="520" fill="none" stroke="#09A8B8" stroke-width="5" rx="12"/></svg>

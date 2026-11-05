@@ -1,0 +1,279 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="27.1">
+    <head><link rel="shortcut icon" href="../favicon.ico"/><link rel="icon" href="../favicon.ico"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="DC.rights.owner" content="(C) Copyright 2026"/><meta name="copyright" content="(C) Copyright 2026"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="reference"/><meta name="description" content="Find the likely cause and the first thing to check when an agent, session, block, or rewind does not behave as you expect."/><meta name="DC.relation" content="../agent_cloud/administer_agent_cloud.html"/><meta name="DC.relation" content="../agent_cloud/agent_cloud_best_practices.html"/><meta name="DC.relation" content="../saas-ai/rubrik_ai_overview.html"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="troubleshooting_agent_cloud"/>        
+      <title>Troubleshooting Agent Cloud</title><!--  Generated with Oxygen version 27.1, build number 2025032023.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="troubleshooting_agent_cloud-d36952e62068"/><meta name="wh-source-relpath" content="agent_cloud/troubleshooting_agent_cloud.dita"/><meta name="wh-out-relpath" content="agent_cloud/troubleshooting_agent_cloud.html"/>
+
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/commons.css?buildId=2025032023"/>
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic.css?buildId=2025032023"/>
+
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20261106002748"></script>
+    <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2025032023"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20261106002748"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2025032023"></script>
+    <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2025032023"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2025032023"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/html-tiles-style-en_min.css?buildId=2025032023"/>
+    <script>
+    window.addEventListener("load", myInit, true); function myInit(){  addTargetBlank() };
+    </script>
+        
+    <script>
+    function addTargetBlank() {
+    const links = document.querySelectorAll('.open-in-tab');
+    links.forEach(link =&gt; {
+    link.setAttribute('target', '_blank');
+    });
+    }
+    </script>
+    
+    <!-- OneTrust Cookies Consent Notice start for docs.rubrik.com -->
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="48df0b20-13be-42ae-a47f-8fda7fae9dc7"></script>
+        <script type="text/javascript">
+            function OptanonWrapper() {
+            }</script>
+        <!-- OneTrust Cookies Consent Notice end for docs.rubrik.com -->
+    <script defer="true" src="../oxygen-webhelp/template/js/custom-collapsed-sections.js"></script>
+</head>
+
+    <body id="troubleshooting_agent_cloud" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="visually-hidden visually-hidden-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid navbar-expand-md">
+        <div class="wh_header_flex_container navbar-nav navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="../index.html" class=" wh_logo d-none d-sm-block "><img src="../oxygen-webhelp/template/resources/images/rubrik_logo.png" alt="Rubrik Security Cloud"/></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Rubrik Security Cloud</span></a></div>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                
+                
+                <title>toggle</title>
+        <div style="display: flex; justify-content: right; margin: 10px 0 0 0">
+            <label class="switch">
+                <input name="theme" type="checkbox" onclick="toggleTheme()" checked="checked"/>
+                <span title="Switch theme" class="eye"></span>
+            </label>
+        </div>
+        <script>
+            // function to set a given theme/color-scheme
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.documentElement.className = themeName;
+            }
+            
+            // function to toggle between light and dark theme
+            function toggleTheme() {
+                if (localStorage.getItem('theme') === 'theme-dark') {
+                    setTheme('theme-light');
+                } else {
+                    setTheme('theme-dark');
+                }
+            }
+            
+            // Immediately invoked function to set the theme on initial load
+            (function () {
+                if (localStorage.getItem('theme') === 'theme-light') {
+                    setTheme('theme-light');
+                } else {
+                    setTheme('theme-dark');
+                }
+            })();</script>
+    
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid navbar-expand-md" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><div class="topicref"><div class="title"><a href="../agent_cloud/agent_cloud_RSC.html">Agent Cloud</a><div class="wh-tooltip"><p class="shortdesc">Detect risky actions caused on your data by autonomous AI agents, and rewind
+                the actions to repair changes to the data and configurations without
+                downtime.</p></div></div></div></li><li><div class="topicref" data-id="agent_cloud_RSC"><div class="title"><a href="../agent_cloud/agent_cloud_RSC.html"><span class="ph">Agent Cloud</span> with <span class="ph">RSC</span></a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Agent Cloud</span> with <span class="ph">RSC</span> provides a comprehensive solution         for discovering AI agents in your environment, understanding which tools they have access         to, detecting risky actions they perform on your data and configurations, and rewinding         unauthorized changes without downtime.</p></div></div></div></li><li><div class="topicref" data-id="administer_agent_cloud"><div class="title"><a href="../agent_cloud/administer_agent_cloud.html">Administer Agent Cloud</a><div class="wh-tooltip"><p class="shortdesc">Control who can see and manage <span class="ph">Agent Cloud</span>, review platform and user         activity, understand who is responsible for each part of a deployment, and follow best         practices for rollout and for building agents that are easier to govern.</p></div></div></div></li><li class="active"><div class="topicref" data-id="troubleshooting_agent_cloud"><div class="title"><a href="../agent_cloud/troubleshooting_agent_cloud.html">Troubleshooting <span class="ph">Agent Cloud</span></a><div class="wh-tooltip"><p class="shortdesc">Find the likely cause and the first thing to check when an agent, session, block, or rewind does not behave as you expect.</p></div></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="- topic/link link" href="../agent_cloud/agent_cloud_best_practices.html" title="Best practices for AI agents managed by Agent Cloud" aria-label="Previous topic: Best practices for AI agents managed by Agent Cloud" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="../saas-ai/rubrik_ai_overview.html" title="Rubrik AI" aria-label="Next topic: Rubrik AI" rel="next"></a></span>  </span></div>
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+	                            <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e1390" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e1390-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/common/getting_started_with_rsc.html" id="tocId-d36952e1390-link">Getting Started with RSC</a><div class="wh-tooltip"><p class="shortdesc">Set up initial configuration, network prerequisites, and primary
+                accounts.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e2151" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e2151-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/common/rubrik_clusters_2.html" id="tocId-d36952e2151-link">Rubrik Clusters</a><div class="wh-tooltip"><p class="shortdesc">Manage on-premises infrastructure, including cluster registration, CDM
+                upgrades, and hardware configuration.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e6152" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e6152-link" class="wh-expand-btn"></span><div class="title"><a href="../hadr/hadr_overview.html" id="tocId-d36952e6152-link">High Availability</a><div class="wh-tooltip"><p class="shortdesc">Configure High Availability to enable manual failover of Rubrik
+                cluster workloads for business continuity.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e6290" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e6290-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/sla_domains.html" id="tocId-d36952e6290-link">Protection Policies</a><div class="wh-tooltip"><p class="shortdesc">Configure SLA Domains to define backup frequency, retention, archiving, and
+                replication schedules.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e11849" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e11849-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/users_access.html" id="tocId-d36952e11849-link">Security</a><div class="wh-tooltip"><p class="shortdesc">Configure and manage RSC security features, including user access, SSO,
+                Quorum Authorization, and data encryption.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e15210" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e15210-link" class="wh-expand-btn"></span><div class="title"><a href="../rubrik/supported_workloads.html" id="tocId-d36952e15210-link">Workloads</a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Rubrik Security Cloud - Data Protection</span> securely manages and protects data from a
+                wide variety of workload types.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e51253" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e51253-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/ri_ransomware_monitoring.html" id="tocId-d36952e51253-link">Cyber Resiliency</a><div class="wh-tooltip"><p class="shortdesc">Detect and govern risk using Threat Analytics and Data Security Posture.
+                Prepare for automated Orchestrated Application Recovery.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e55324" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e55324-link" class="wh-expand-btn"></span><div class="title"><a href="../identity_resilience/identity_resilience.html" id="tocId-d36952e55324-link">Identity Resiliency</a><div class="wh-tooltip"><p class="shortdesc">Secure, monitor, and recover hybrid identity providers, including Active
+                Directory<span class="ph">, Microsoft Entra ID, and Okta</span>.</p></div></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d36952e59700" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d36952e59700-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/agent_cloud_RSC.html" id="tocId-d36952e59700-link">Agent Cloud</a><div class="wh-tooltip"><p class="shortdesc">Detect risky actions caused on your data by autonomous AI agents, and rewind
+                the actions to repair changes to the data and configurations without
+                downtime.</p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="true"><div data-tocid="agent_cloud_RSC-d36952e59706" class="topicref" data-id="agent_cloud_RSC" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action agent_cloud_RSC-d36952e59706-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/agent_cloud_RSC.html" id="agent_cloud_RSC-d36952e59706-link"><span class="ph">Agent Cloud</span> with <span class="ph">RSC</span></a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Agent Cloud</span> with <span class="ph">RSC</span> provides a comprehensive solution         for discovering AI agents in your environment, understanding which tools they have access         to, detecting risky actions they perform on your data and configurations, and rewinding         unauthorized changes without downtime.</p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e59726" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e59726-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/agent_cloud_overview.html" id="tocId-d36952e59726-link">Introduction to Agent Cloud</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="get_started_agent_cloud-d36952e59811" class="topicref" data-id="get_started_agent_cloud" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action get_started_agent_cloud-d36952e59811-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/get_started_agent_cloud.html" id="get_started_agent_cloud-d36952e59811-link">Get started with <span class="ph">Agent Cloud</span></a><div class="wh-tooltip"><p class="shortdesc">To start using <span class="ph">Agent Cloud</span>, confirm the prerequisites, deploy a data         plane, connect your agents, verify the setup, and then add policies.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="agent_cloud_data_plane_provisioning-d36952e59945" class="topicref" data-id="agent_cloud_data_plane_provisioning" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action agent_cloud_data_plane_provisioning-d36952e59945-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/agent_cloud_data_plane_provisioning.html" id="agent_cloud_data_plane_provisioning-d36952e59945-link">Choose your data plane</a><div class="wh-tooltip"><p class="shortdesc">The <span class="ph">Agent Cloud</span> data plane runs as a SaaS deployment that Rubrik         operates, or in your own AWS VPC or Azure VNet. Choose where it runs before you connect your         AI providers and agents.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="configure_ai_connections-d36952e60245" class="topicref" data-id="configure_ai_connections" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action configure_ai_connections-d36952e60245-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/configure_ai_connections.html" id="configure_ai_connections-d36952e60245-link">Connect your AI agents</a><div class="wh-tooltip"><p class="shortdesc">A connection links <span class="ph">Agent Cloud</span> to a source of agent activity, such as an         enterprise AI platform, a gateway that your custom agents use, or the endpoint detection         binary on employee devices.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="discover_observe_agent_cloud-d36952e61332" class="topicref" data-id="discover_observe_agent_cloud" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action discover_observe_agent_cloud-d36952e61332-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/discover_observe_agent_cloud.html" id="discover_observe_agent_cloud-d36952e61332-link">Discover and observe</a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Agent Cloud</span> builds an inventory of the agents, tools, identities, models,         and MCP servers in your environment, and records what each agent does, session by         session.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="manage_agent_operations_policies-d36952e61539" class="topicref" data-id="manage_agent_operations_policies" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action manage_agent_operations_policies-d36952e61539-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/manage_agent_operations_policies.html" id="manage_agent_operations_policies-d36952e61539-link">Manage <span class="ph">Agent Cloud</span> policies</a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Agent Cloud</span> policies are the governance rules that define the acceptable         behavior for your AI agents. Use them to detect risky activity and, on connections that         support it, stop it.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="rewind_agent_violations-d36952e61929" class="topicref" data-id="rewind_agent_violations" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action rewind_agent_violations-d36952e61929-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/rewind_agent_violations.html" id="rewind_agent_violations-d36952e61929-link">Rewind AI agent changes with <span class="ph">Agent Cloud</span></a><div class="wh-tooltip"><p class="shortdesc">Agent Rewind undoes the changes that an agent action made to your data by restoring         the affected objects from Rubrik backups, without rolling back the entire workload. Rewind         requires a complete Rubrik snapshot taken within seven days before the action.</p></div></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="administer_agent_cloud-d36952e61964" class="topicref" data-id="administer_agent_cloud" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action administer_agent_cloud-d36952e61964-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/administer_agent_cloud.html" id="administer_agent_cloud-d36952e61964-link">Administer Agent Cloud</a><div class="wh-tooltip"><p class="shortdesc">Control who can see and manage <span class="ph">Agent Cloud</span>, review platform and user         activity, understand who is responsible for each part of a deployment, and follow best         practices for rollout and for building agents that are easier to govern.</p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><div data-tocid="rac_rbac_overview-d36952e61978" class="topicref" data-id="rac_rbac_overview" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action rac_rbac_overview-d36952e61978-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/rac_rbac_overview.html" id="rac_rbac_overview-d36952e61978-link">Access control for <span class="ph">Agent Cloud</span></a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Agent Cloud</span> separates seeing what it found from reading what agents said.         Session content is the most sensitive data that <span class="ph">Agent Cloud</span> holds, so viewing it         requires its own privilege, which no built-in role includes.</p></div></div></div></li><li role="treeitem"><div data-tocid="events_page_agent_cloud-d36952e62024" class="topicref" data-id="events_page_agent_cloud" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/events_page_agent_cloud.html" id="events_page_agent_cloud-d36952e62024-link">Event log and audit log</a><div class="wh-tooltip"><p class="shortdesc">The event log records platform activity in <span class="ph">Agent Cloud</span>, such as policy         updates and connection changes. The audit log records who did what. Open both from the         Events menu.</p></div></div></div></li><li role="treeitem"><div data-tocid="responsibilities_by_role_agent_cloud-d36952e62038" class="topicref" data-id="responsibilities_by_role_agent_cloud" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/responsibilities_by_role_agent_cloud.html" id="responsibilities_by_role_agent_cloud-d36952e62038-link">Responsibilities by role</a><div class="wh-tooltip"><p class="shortdesc">Who is responsible for each part of an <span class="ph">Agent Cloud</span> deployment: the         customer, Professional Services, or Rubrik Support.</p></div></div></div></li><li role="treeitem"><div data-tocid="agent_cloud_best_practices-d36952e62052" class="topicref" data-id="agent_cloud_best_practices" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/agent_cloud_best_practices.html" id="agent_cloud_best_practices-d36952e62052-link">Best practices for AI agents managed by <span class="ph">Agent Cloud</span></a><div class="wh-tooltip"><p class="shortdesc">Follow these practices to roll out <span class="ph">Agent Cloud</span> safely and to get the most         accurate inventory, monitoring, and enforcement for your agents.</p></div></div></div></li><li role="treeitem" class="active"><div data-tocid="troubleshooting_agent_cloud-d36952e62068" class="topicref" data-id="troubleshooting_agent_cloud" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/troubleshooting_agent_cloud.html" id="troubleshooting_agent_cloud-d36952e62068-link">Troubleshooting <span class="ph">Agent Cloud</span></a><div class="wh-tooltip"><p class="shortdesc">Find the likely cause and the first thing to check when an agent, session, block, or rewind does not behave as you expect.</p></div></div></div></li></ul></li></ul></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e62081" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e62081-link" class="wh-expand-btn"></span><div class="title"><a href="../saas-ai/rubrik_ai_overview.html" id="tocId-d36952e62081-link">AI and Automation</a><div class="wh-tooltip"><p class="shortdesc">Use Rubrik AI and Annapurna for conversational interaction with your
+                environment, connect external AI agents through Rubrik MCP, and access the GraphQL
+                API Playground for scripting.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e62376" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e62376-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/integration_third_party_apps_in_rsc.html" id="tocId-d36952e62376-link">Integrations and License Usage</a><div class="wh-tooltip"><p class="shortdesc">Connect external systems, such as Zscaler and Okta ITP. Monitor consumption,
+                entitlements, and license usage.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e63299" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e63299-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/common/events.html" id="tocId-d36952e63299-link">Monitoring and Reporting</a><div class="wh-tooltip"><p class="shortdesc">Monitor live events, generate reports, check real-time system health using
+                dashboards, and configure notifications.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e65335" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e65335-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/rsc_insights.html" id="tocId-d36952e65335-link">Diagnostic Tools</a><div class="wh-tooltip"><p class="shortdesc">Access diagnostic solutions, such as Network Diagnostics, for operational
+                issues.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e65422" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e65422-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/mt_multitenancy.html" id="tocId-d36952e65422-link">Multitenancy</a><div class="wh-tooltip"><p class="shortdesc">Logically isolate shared resources to ensure organizations can only access
+                their specific data.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e66604" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e66604-link" class="wh-expand-btn"></span><div class="title"><a href="../rsc_ports/port_specs.html" id="tocId-d36952e66604-link">Port Specifications</a><div class="wh-tooltip"><p class="shortdesc">Port requirements for <span class="ph">RSC</span> deployments, organized by workload
+                type, Envoy organization network ports, and Rubrik cluster administration
+                ports.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36952e66703" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36952e66703-link" class="wh-expand-btn"></span><div class="title"><a href="../reuse/notices.html" id="tocId-d36952e66703-link">Additional Resources</a><div class="wh-tooltip"><p class="shortdesc">Access additional resources, such as Offline Recovery and Compatibility
+                Matrix guides.</p></div></div></div></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic       reference/reference topic reference" role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Troubleshooting <span class="- topic/ph ph">Agent Cloud</span></h1>
+    
+    <div class="- topic/body reference/refbody body refbody"><p class="- topic/shortdesc shortdesc">Find the likely cause and the first thing to check when an agent, session, block, or rewind does not behave as you expect.</p>
+        <section class="- topic/section section">
+            <p class="- topic/p p">This topic lists the causes that the documentation states for common symptoms. If the check does not resolve the problem, contact Rubrik Support.</p>
+            <div class="table-container"><table class="- topic/table table frame-all" data-cols="4"><caption><span class="- topic/desc desc tabledesc">This table lists common symptoms, their likely causes, what to check, and where to read more.</span></caption><colgroup><col style="width:18.918918918918916%"/><col style="width:27.027027027027025%"/><col style="width:32.43243243243243%"/><col style="width:21.62162162162162%"/></colgroup><thead class="- topic/thead thead"><tr class="- topic/row"><th class="- topic/entry entry colsep-1 rowsep-1" id="troubleshooting_agent_cloud__entry__1">Symptom</th><th class="- topic/entry entry colsep-1 rowsep-1" id="troubleshooting_agent_cloud__entry__2">Likely cause</th><th class="- topic/entry entry colsep-1 rowsep-1" id="troubleshooting_agent_cloud__entry__3">What to check</th><th class="- topic/entry entry colsep-0 rowsep-1" id="troubleshooting_agent_cloud__entry__4">Read</th></tr></thead><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__1">A connection or agent does not appear in the inventory.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__2">The agent has not run since you created the connection, or the connection setup is incomplete.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__3">Run the agent, then check the connection list and the AI inventory. For an endpoint agent, confirm that it appears as active on the Dashboard.</td><td class="- topic/entry entry colsep-0 rowsep-1" headers="troubleshooting_agent_cloud__entry__4"><a class="- topic/xref xref" href="verify_agent_cloud_setup.html" title="Confirm that a connection lists agents, that sessions are recorded, and that policies raise alerts or block as you expect.">Verifying your Agent Cloud setup</a>; <a class="- topic/xref xref" href="ai_inventory_agent_cloud.html" title="The inventory lists everything that Agent Cloud has discovered across your connections: agents, tools, identities, models, and MCP servers.">AI inventory</a></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__1">No session appears.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__2">Activity can take time to appear. For ChatGPT Enterprise, OpenAI may not have enabled Compliance API access, or the workspace may have no recent activity. For endpoint agents, the session appears after the next run of the binary.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__3">Wait for the typical time, run the agent again, and check the Sessions page. If nothing appears after 30 minutes for ChatGPT Enterprise, check the Compliance API access, then contact Rubrik Support.</td><td class="- topic/entry entry colsep-0 rowsep-1" headers="troubleshooting_agent_cloud__entry__4"><a class="- topic/xref xref" href="verify_agent_cloud_setup.html" title="Confirm that a connection lists agents, that sessions are recorded, and that policies raise alerts or block as you expect.">Verifying your Agent Cloud setup</a>; <a class="- topic/xref xref" href="sessions_actions_agent_cloud.html" title="Agent Cloud records what your agents do as sessions, each with a timeline of prompts, responses, and tool calls, and as actions, the individual tool calls within them.">Sessions and actions</a></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__1">A Block policy did not block an action.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__2">The connection cannot block, or cannot block that message type. The message type was not selected for blocking. The decision timed out and blocking failed open. The agent reached the provider or tool directly. The oversized-prompt exception does not apply to these.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__3">Check the support matrix for the connection. Check the message types that the policy blocks. Remember that a policy alert is still recorded.</td><td class="- topic/entry entry colsep-0 rowsep-1" headers="troubleshooting_agent_cloud__entry__4"><a class="- topic/xref xref" href="blocking_limitations_agent_cloud.html" title="Real-time blocking stops what it can inline, and the monitoring that follows each session catches the rest. Know these limits before you rely on a Block policy.">Blocking limitations and fail-open behavior</a>; <a class="- topic/xref xref" href="agent_cloud_support_matrix.html" title="Find out what each Agent Cloud connection discovers, captures, and can block.">Agent Cloud support matrix</a></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__1">An action was blocked but no alert is visible yet.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__2">The alert is created when the session is processed, so it appears after a delay.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__3">Wait, then search the Alerts page for the blocking reference ID in the refusal message. A blocked action shows a Blocked chip.</td><td class="- topic/entry entry colsep-0 rowsep-1" headers="troubleshooting_agent_cloud__entry__4"><a class="- topic/xref xref" href="blocked_action_behavior_agent_cloud.html" title="When a Block policy denies an item, Agent Cloud withholds that item and the rest of the agent's turn continues. The policy alert appears after Agent Cloud processes the session.">What happens when an action is blocked</a></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__1">Rewind cannot proceed.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__2">Rubrik does not protect the object, no complete snapshot exists within seven days before the action, or the workload is not supported.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__3">Confirm that the object is protected and that a qualifying snapshot exists. Check the supported workloads and the workload-specific requirements.</td><td class="- topic/entry entry colsep-0 rowsep-1" headers="troubleshooting_agent_cloud__entry__4"><a class="- topic/xref xref" href="rewind_agent_violations.html" title="Agent Rewind undoes the changes that an agent action made to your data by restoring the affected objects from Rubrik backups, without rolling back the entire workload. Rewind requires a complete Rubrik snapshot taken within seven days before the action.">Rewind AI agent changes with Agent Cloud</a>; <a class="- topic/xref xref" href="supported_workloads_for_agent_rewind.html" title="Information about the workloads that Agent Rewind supports, including their restore scope, restore destination, and notes for each workload type.">Supported workloads for Agent Rewind</a></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__1">Users cannot see session content.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__2">No built-in role includes View Session Timelines and Summaries.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__3">Create a custom role with the privilege, or add it to an existing custom role.</td><td class="- topic/entry entry colsep-0 rowsep-1" headers="troubleshooting_agent_cloud__entry__4"><a class="- topic/xref xref" href="granting_session_viewing_access.html" title="Grant users the permission to view session data in Agent Cloud by creating a custom role with the View Session Timelines and Summaries permission.">Granting session viewing access</a>; <a class="- topic/xref xref" href="rac_rbac_overview.html" title="Agent Cloud separates seeing what it found from reading what agents said. Session content is the most sensitive data that Agent Cloud holds, so viewing it requires its own privilege, which no built-in role includes.">Access control for Agent Cloud</a></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__1">A custom agent cannot reach the Rubrik AI gateway.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__2">The network path to the gateway endpoint on port 443 is blocked, or your network policy does not allow access by DNS name.</td><td class="- topic/entry entry colsep-1 rowsep-1" headers="troubleshooting_agent_cloud__entry__3">Allow HTTPS on port 443 to the gateway endpoint. If DNS names are not allowed, contact your Rubrik account team for IP addresses.</td><td class="- topic/entry entry colsep-0 rowsep-1" headers="troubleshooting_agent_cloud__entry__4"><a class="- topic/xref xref" href="custom_agents_built_in_model_gateway.html" title="The Rubrik AI gateway is a Rubrik-hosted proxy between your custom agents and model providers. It records every prompt, response, and tool call, and blocks the ones that break a block policy before they reach the model or the agent.">Rubrik AI gateway</a></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-1 rowsep-0" headers="troubleshooting_agent_cloud__entry__1">The data plane deployment in my AWS or Azure account is failing.</td><td class="- topic/entry entry colsep-1 rowsep-0" headers="troubleshooting_agent_cloud__entry__2">The account may lack the service quotas that the environment needs, or the stack or resource group was changed or deleted.</td><td class="- topic/entry entry colsep-1 rowsep-0" headers="troubleshooting_agent_cloud__entry__3">Check service quotas. Do not delete or alter the CloudFormation stack or the Azure resource group. A deleted stack requires a full redeployment. Contact Rubrik Support.</td><td class="- topic/entry entry colsep-0 rowsep-0" headers="troubleshooting_agent_cloud__entry__4"><a class="- topic/xref xref" href="customer_responsibilities_aws_agent_gateway.html" title="Deploying the model gateway infrastructure within your own AWS account provides data control, but also introduces specific responsibilities and risks that you must manage.">Customer responsibilities for AWS VPC deployment</a>; <a class="- topic/xref xref" href="customer_responsibilities_azure_vpc.html" title="Deploying the Azure VNet infrastructure within your own Azure account provides data control, but also introduces specific responsibilities and risks that you must manage.">Customer responsibilities for Azure VNet</a></td></tr></tbody></table></div>
+        </section>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    
+        <title>footer</title>
+    
+        <div class="footer">
+            <ul class="footernav">
+                <li>
+                    <a href="https://support.rubrik.com/" target="_blank">Support</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="https://www.rubrik.com/legal" target="_blank">Legal</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="https://www.rubrik.com/legal/privacy-policy" target="_blank">Privacy Policy</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="https://www.rubrik.com/legal/terms-of-use" target="_blank">Terms of Use</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="https://www.rubrik.com/legal/cookie-policy" target="_blank">Cookie Policy</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="https://www.rubrik.com/trust" target="_blank">Trust</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <ul class="footernav">
+                <li>
+                    CA Residents only: <a href="https://www.rubrik.com/legal/privacy-request" target="_blank">Do not sell or share my personal information</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="https://www.rubrik.com/legal/privacy-request" target="_blank">Do not share my sensitive information</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <script type="text/javascript">
+<!--
+            var generated = new Date(document.lastModified);
+            var day = generated.getDate();
+            var month = generated.getMonth() + 1;
+            var year = generated.getFullYear();
+            document.write("Generated on: " + year + '/' + (month <= 9 ? '0' + month: month) + '/' + (day <= 9 ? '0' + day: day));// --></script>
+        </div>
+        <div class="footer">Copyright © Rubrik - Zero Trust Data
+            Security™</div>
+    
+  </div>
+</footer>
+        
+        <button id="go2top" class="d-print-none" title="Go to top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </button>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="700" viewBox="0 0 840 700" font-family="Segoe UI, Calibri, Arial, sans-serif">
+<rect width="840" height="700" fill="#F4F7FA" rx="12"/>
+<rect x="0" y="0" width="840" height="72" fill="#0A2347" rx="12"/><rect x="0" y="60" width="840" height="12" fill="#0A2347"/><rect x="0" y="69" width="840" height="3" fill="#09A8B8"/>
+<text x="24" y="32" font-size="18" font-weight="bold" fill="#FFFFFF" letter-spacing="0.3">How Blocking Works</text>
+<text x="24" y="52" font-size="11" fill="#8AACCC">Where Agent Cloud can stop an agent action, and where it cannot</text>
+<rect x="24" y="92" width="792" height="64" rx="8" fill="#FFF4E5" stroke="#E8B04A" stroke-width="1.5"/>
+<text x="420" y="118" font-size="13" fill="#7A4A00" text-anchor="middle" font-weight="bold">Blocking fails open, and most connections cannot block.</text>
+<text x="420" y="138" font-size="10.5" fill="#7A4A00" text-anchor="middle">If Agent Cloud cannot decide in time, or the agent bypasses the connection, the action proceeds.</text>
+<text x="420" y="188" font-size="12" fill="#0A2347" text-anchor="middle" font-weight="bold">Four points where Agent Cloud can check an item</text>
+<rect x="24" y="204" width="192" height="70" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<circle cx="46" cy="226" r="13" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2"/>
+<text x="46" y="231" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">1</text>
+<text x="128" y="230" font-size="12" fill="#0A2347" text-anchor="middle" font-weight="bold">User prompt</text>
+<text x="120" y="256" font-size="10" fill="#4A6A8A" text-anchor="middle">Before the model sees it</text>
+<rect x="224" y="204" width="192" height="70" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<circle cx="246" cy="226" r="13" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2"/>
+<text x="246" y="231" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">2</text>
+<text x="328" y="230" font-size="12" fill="#0A2347" text-anchor="middle" font-weight="bold">Tool call</text>
+<text x="320" y="256" font-size="10" fill="#4A6A8A" text-anchor="middle">Before it runs</text>
+<rect x="424" y="204" width="192" height="70" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<circle cx="446" cy="226" r="13" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2"/>
+<text x="446" y="231" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">3</text>
+<text x="528" y="230" font-size="12" fill="#0A2347" text-anchor="middle" font-weight="bold">Tool response</text>
+<text x="520" y="256" font-size="10" fill="#4A6A8A" text-anchor="middle">Before it returns to the model</text>
+<rect x="624" y="204" width="192" height="70" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<circle cx="646" cy="226" r="13" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2"/>
+<text x="646" y="231" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">4</text>
+<text x="728" y="230" font-size="12" fill="#0A2347" text-anchor="middle" font-weight="bold">Agent response</text>
+<text x="720" y="256" font-size="10" fill="#4A6A8A" text-anchor="middle">Before it reaches the user</text>
+<line x1="420" y1="276" x2="420" y2="310" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="420.0,310.0 416.1,301.9 423.9,301.9" fill="#B0C8E0"/>
+<rect x="220" y="312" width="400" height="76" rx="8" fill="#EEF4FA" stroke="#09A8B8" stroke-width="1.5"/>
+<text x="420" y="336" font-size="11.5" fill="#0A2347" text-anchor="middle" font-weight="bold">Agent Cloud checks the item against your active Block policies</text>
+<text x="420" y="356" font-size="10" fill="#1A2A3A" text-anchor="middle">Structured rules (tool, agent, or model) are matched directly.</text>
+<text x="420" y="370" font-size="10" fill="#1A2A3A" text-anchor="middle">SAGE judges custom natural-language policies inline.</text>
+<line x1="320" y1="390" x2="200" y2="452" stroke="#B03030" stroke-width="2.5"/>
+<polygon points="200.0,452.0 205.4,444.8 209.0,451.8" fill="#B03030"/>
+<line x1="520" y1="390" x2="640" y2="452" stroke="#21AA7A" stroke-width="2.5"/>
+<polygon points="640.0,452.0 631.0,451.8 634.6,444.8" fill="#21AA7A"/>
+<rect x="24" y="454" width="352" height="92" rx="8" fill="#FDECEC" stroke="#B03030" stroke-width="1.5"/>
+<text x="200" y="478" font-size="12" fill="#8A1F1F" text-anchor="middle" font-weight="bold">A Block policy denies the item</text>
+<text x="200" y="498" font-size="10.5" fill="#1A2A3A" text-anchor="middle">Agent Cloud withholds that one item.</text>
+<text x="200" y="513" font-size="10.5" fill="#1A2A3A" text-anchor="middle">The rest of the agent’s turn continues.</text>
+<rect x="464" y="454" width="352" height="92" rx="8" fill="#E8F7F0" stroke="#21AA7A" stroke-width="1.5"/>
+<text x="640" y="478" font-size="12" fill="#0A4030" text-anchor="middle" font-weight="bold">No Block policy denies the item</text>
+<text x="640" y="498" font-size="10.5" fill="#1A2A3A" text-anchor="middle">The item proceeds.</text>
+<text x="640" y="514" font-size="10.5" fill="#7A4A00" text-anchor="middle">This is also the result when a decision times out.</text>
+<rect x="24" y="566" width="792" height="96" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<rect x="24" y="566" width="792" height="28" rx="8" fill="#0C3460"/><rect x="24" y="584" width="792" height="10" fill="#0C3460"/>
+<text x="420.0" y="584.0" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Every Block policy is also monitored</text>
+<text x="420" y="616" font-size="10.5" fill="#1A2A3A" text-anchor="middle">Policies run twice: in real time to stop the action, and again after the session is captured.</text>
+<text x="420" y="633" font-size="10.5" fill="#1A2A3A" text-anchor="middle">A blocked action always produces an alert, and so does a matching action that was not stopped.</text>
+<rect x="0" y="678" width="840" height="22" fill="#0A2347"/><rect x="0" y="678" width="840" height="22" fill="#0A2347" rx="12"/><rect x="0" y="678" width="840" height="12" fill="#0A2347"/>
+<text x="24" y="692" font-size="9" fill="#8AACCC">Rubrik Security Cloud — Agent Cloud blocking path</text>
+<rect width="840" height="700" fill="none" stroke="#09A8B8" stroke-width="5" rx="12"/></svg>

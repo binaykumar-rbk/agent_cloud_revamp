@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="740" viewBox="0 0 840 740" font-family="Segoe UI, Calibri, Arial, sans-serif">
+<rect width="840" height="740" fill="#F4F7FA" rx="12"/>
+<rect x="0" y="0" width="840" height="72" fill="#0A2347" rx="12"/><rect x="0" y="60" width="840" height="12" fill="#0A2347"/><rect x="0" y="69" width="840" height="3" fill="#09A8B8"/>
+<text x="24" y="32" font-size="18" font-weight="bold" fill="#FFFFFF" letter-spacing="0.3">Choose How to Connect Your Agents</text>
+<text x="24" y="52" font-size="11" fill="#8AACCC">The connection depends on where the agent runs, and sets whether it can block</text>
+<text x="420" y="104" font-size="13" fill="#0A2347" text-anchor="middle" font-weight="bold">Where does the agent run?</text>
+<line x1="420" y1="116" x2="120.0" y2="150" stroke="#B0C8E0" stroke-width="1.8"/>
+<polygon points="120.0,150.0 127.6,145.2 128.5,153.0" fill="#B0C8E0"/>
+<rect x="24" y="152" width="192" height="128" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<rect x="24" y="152" width="192" height="30" rx="8" fill="#075F68"/><rect x="24" y="172" width="192" height="10" fill="#075F68"/>
+<text x="120.0" y="171.0" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Enterprise AI platform</text>
+<text x="120.0" y="204" font-size="10" fill="#1A2A3A" text-anchor="middle">Copilot Studio, M365 Copilot,</text>
+<text x="120.0" y="219" font-size="10" fill="#1A2A3A" text-anchor="middle">Foundry, ChatGPT Enterprise,</text>
+<text x="120.0" y="234" font-size="10" fill="#1A2A3A" text-anchor="middle">Claude Enterprise, Gemini,</text>
+<text x="120.0" y="249" font-size="10" fill="#1A2A3A" text-anchor="middle">Bedrock</text>
+<line x1="120.0" y1="282" x2="120.0" y2="312" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="120.0,312.0 116.1,303.9 123.9,303.9" fill="#B0C8E0"/>
+<rect x="24" y="314" width="192" height="128" rx="8" fill="#EEF4FA" stroke="#09A8B8" stroke-width="1.5"/>
+<text x="120.0" y="338" font-size="12" fill="#0A2347" text-anchor="middle" font-weight="bold">API integration</text>
+<text x="120.0" y="362" font-size="9.5" fill="#1A2A3A" text-anchor="middle">Platform APIs. No gateway needed.</text>
+<line x1="120.0" y1="444" x2="120.0" y2="474" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="120.0,474.0 116.1,465.9 123.9,465.9" fill="#B0C8E0"/>
+<rect x="24" y="476" width="192" height="138" rx="8" fill="#FFFFFF" stroke="#E8B04A" stroke-width="2"/>
+<text x="120.0" y="498" font-size="10.5" fill="#4A6A8A" text-anchor="middle" font-weight="bold">Real-time blocking</text>
+<text x="120.0" y="520" font-size="11" fill="#0A2347" text-anchor="middle" font-weight="bold">Copilot Studio</text>
+<text x="120.0" y="537" font-size="10" fill="#7A4A00" text-anchor="middle">Tool calls only, when</text>
+<text x="120.0" y="551" font-size="10" fill="#7A4A00" text-anchor="middle">enabled</text>
+<text x="120.0" y="579" font-size="11" fill="#0A2347" text-anchor="middle" font-weight="bold">All other platforms</text>
+<text x="120.0" y="596" font-size="10" fill="#8A1F1F" text-anchor="middle">Cannot block</text>
+<line x1="420" y1="116" x2="320.0" y2="150" stroke="#B0C8E0" stroke-width="1.8"/>
+<polygon points="320.0,150.0 326.4,143.7 328.9,151.1" fill="#B0C8E0"/>
+<rect x="224" y="152" width="192" height="128" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<rect x="224" y="152" width="192" height="30" rx="8" fill="#075F68"/><rect x="224" y="172" width="192" height="10" fill="#075F68"/>
+<text x="320.0" y="171.0" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Custom agent</text>
+<text x="320.0" y="204" font-size="10" fill="#1A2A3A" text-anchor="middle">Your agent calls a model</text>
+<text x="320.0" y="219" font-size="10" fill="#1A2A3A" text-anchor="middle">provider such as OpenAI,</text>
+<text x="320.0" y="234" font-size="10" fill="#1A2A3A" text-anchor="middle">Azure OpenAI, or Anthropic</text>
+<line x1="320.0" y1="282" x2="320.0" y2="312" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="320.0,312.0 316.1,303.9 323.9,303.9" fill="#B0C8E0"/>
+<rect x="224" y="314" width="192" height="128" rx="8" fill="#EEF4FA" stroke="#09A8B8" stroke-width="1.5"/>
+<text x="320.0" y="338" font-size="12" fill="#0A2347" text-anchor="middle" font-weight="bold">Gateway or LiteLLM</text>
+<text x="320.0" y="362" font-size="9.5" fill="#1A2A3A" text-anchor="middle">Already on LiteLLM? Use the plugin.</text>
+<text x="320.0" y="376" font-size="9.5" fill="#1A2A3A" text-anchor="middle">Otherwise use the Rubrik AI gateway.</text>
+<line x1="320.0" y1="444" x2="320.0" y2="474" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="320.0,474.0 316.1,465.9 323.9,465.9" fill="#B0C8E0"/>
+<rect x="224" y="476" width="192" height="138" rx="8" fill="#FFFFFF" stroke="#21AA7A" stroke-width="2"/>
+<text x="320.0" y="498" font-size="10.5" fill="#4A6A8A" text-anchor="middle" font-weight="bold">Real-time blocking</text>
+<text x="320.0" y="520" font-size="11" fill="#0A2347" text-anchor="middle" font-weight="bold">Gateway or LiteLLM</text>
+<text x="320.0" y="537" font-size="10" fill="#0A4030" text-anchor="middle">Prompts, tool calls, tool</text>
+<text x="320.0" y="551" font-size="10" fill="#0A4030" text-anchor="middle">responses, agent responses</text>
+<line x1="420" y1="116" x2="520.0" y2="150" stroke="#B0C8E0" stroke-width="1.8"/>
+<polygon points="520.0,150.0 511.1,151.1 513.6,143.7" fill="#B0C8E0"/>
+<rect x="424" y="152" width="192" height="128" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<rect x="424" y="152" width="192" height="30" rx="8" fill="#075F68"/><rect x="424" y="172" width="192" height="10" fill="#075F68"/>
+<text x="520.0" y="171.0" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Employee device</text>
+<text x="520.0" y="204" font-size="10" fill="#1A2A3A" text-anchor="middle">Coding and desktop agents,</text>
+<text x="520.0" y="219" font-size="10" fill="#1A2A3A" text-anchor="middle">such as Claude Code</text>
+<line x1="520.0" y1="282" x2="520.0" y2="312" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="520.0,312.0 516.1,303.9 523.9,303.9" fill="#B0C8E0"/>
+<rect x="424" y="314" width="192" height="128" rx="8" fill="#EEF4FA" stroke="#09A8B8" stroke-width="1.5"/>
+<text x="520.0" y="338" font-size="12" fill="#0A2347" text-anchor="middle" font-weight="bold">Endpoint detection</text>
+<text x="520.0" y="362" font-size="9.5" fill="#1A2A3A" text-anchor="middle">Deploy the Rubrik binary with MDM.</text>
+<line x1="520.0" y1="444" x2="520.0" y2="474" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="520.0,474.0 516.1,465.9 523.9,465.9" fill="#B0C8E0"/>
+<rect x="424" y="476" width="192" height="138" rx="8" fill="#FFFFFF" stroke="#E8B04A" stroke-width="2"/>
+<text x="520.0" y="498" font-size="10.5" fill="#4A6A8A" text-anchor="middle" font-weight="bold">Real-time blocking</text>
+<text x="520.0" y="520" font-size="11" fill="#0A2347" text-anchor="middle" font-weight="bold">Depends on the agent</text>
+<text x="520.0" y="537" font-size="10" fill="#7A4A00" text-anchor="middle">Claude Code can block; some</text>
+<text x="520.0" y="551" font-size="10" fill="#7A4A00" text-anchor="middle">agents are detection only</text>
+<line x1="420" y1="116" x2="720.0" y2="150" stroke="#B0C8E0" stroke-width="1.8"/>
+<polygon points="720.0,150.0 711.5,153.0 712.4,145.2" fill="#B0C8E0"/>
+<rect x="624" y="152" width="192" height="128" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<rect x="624" y="152" width="192" height="30" rx="8" fill="#075F68"/><rect x="624" y="172" width="192" height="10" fill="#075F68"/>
+<text x="720.0" y="171.0" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">OpenTelemetry framework</text>
+<text x="720.0" y="204" font-size="10" fill="#1A2A3A" text-anchor="middle">Agent framework that emits</text>
+<text x="720.0" y="219" font-size="10" fill="#1A2A3A" text-anchor="middle">OpenTelemetry traces</text>
+<line x1="720.0" y1="282" x2="720.0" y2="312" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="720.0,312.0 716.1,303.9 723.9,303.9" fill="#B0C8E0"/>
+<rect x="624" y="314" width="192" height="128" rx="8" fill="#EEF4FA" stroke="#09A8B8" stroke-width="1.5"/>
+<text x="720.0" y="338" font-size="12" fill="#0A2347" text-anchor="middle" font-weight="bold">OpenTelemetry</text>
+<text x="720.0" y="362" font-size="9.5" fill="#1A2A3A" text-anchor="middle">Traces sent to Agent Cloud.</text>
+<line x1="720.0" y1="444" x2="720.0" y2="474" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="720.0,474.0 716.1,465.9 723.9,465.9" fill="#B0C8E0"/>
+<rect x="624" y="476" width="192" height="138" rx="8" fill="#FFFFFF" stroke="#B03030" stroke-width="2"/>
+<text x="720.0" y="498" font-size="10.5" fill="#4A6A8A" text-anchor="middle" font-weight="bold">Real-time blocking</text>
+<text x="720.0" y="520" font-size="11" fill="#0A2347" text-anchor="middle" font-weight="bold">OpenTelemetry</text>
+<text x="720.0" y="537" font-size="10" fill="#8A1F1F" text-anchor="middle">Cannot block</text>
+<rect x="24" y="630" width="792" height="76" rx="8" fill="#FFF4E5" stroke="#E8B04A" stroke-width="1.5"/>
+<text x="420" y="656" font-size="12" fill="#7A4A00" text-anchor="middle" font-weight="bold">Before you rely on blocking</text>
+<text x="420" y="678" font-size="10" fill="#7A4A00" text-anchor="middle">Blocking fails open. An agent that reaches a model provider or tool directly, outside an enforcing connection, is not blocked.</text>
+<rect x="0" y="718" width="840" height="22" fill="#0A2347"/><rect x="0" y="718" width="840" height="22" fill="#0A2347" rx="12"/><rect x="0" y="718" width="840" height="12" fill="#0A2347"/>
+<text x="24" y="732" font-size="9" fill="#8AACCC">Rubrik Security Cloud — Agent Cloud connection decision</text>
+<rect width="840" height="740" fill="none" stroke="#09A8B8" stroke-width="5" rx="12"/></svg>

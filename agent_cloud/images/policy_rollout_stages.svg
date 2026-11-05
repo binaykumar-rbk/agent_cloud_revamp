@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="640" viewBox="0 0 840 640" font-family="Segoe UI, Calibri, Arial, sans-serif">
+<rect width="840" height="640" fill="#F4F7FA" rx="12"/>
+<rect x="0" y="0" width="840" height="72" fill="#0A2347" rx="12"/><rect x="0" y="60" width="840" height="12" fill="#0A2347"/><rect x="0" y="69" width="840" height="3" fill="#09A8B8"/>
+<text x="24" y="32" font-size="18" font-weight="bold" fill="#FFFFFF" letter-spacing="0.3">Policy Rollout Stages</text>
+<text x="24" y="52" font-size="11" fill="#8AACCC">Start in Monitor, and move a policy to Block only when it is ready</text>
+<text x="420" y="100" font-size="10" fill="#1A2A3A" text-anchor="middle"></text>
+<rect x="88" y="92" width="728" height="84" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<rect x="88" y="92" width="728" height="30" rx="8" fill="#075F68"/><rect x="88" y="112" width="728" height="10" fill="#075F68"/>
+<text x="452.0" y="111.0" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Monitor</text>
+<text x="452" y="150" font-size="10.5" fill="#1A2A3A" text-anchor="middle">Enable system policies or policy packs in Monitor mode and review the alerts.</text>
+<circle cx="60" cy="108" r="13" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2"/>
+<text x="60" y="113" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">1</text>
+<line x1="60" y1="124" x2="60" y2="182" stroke="#B0C8E0" stroke-width="2" stroke-dasharray="6,4"/>
+<polygon points="60.0,182.0 56.1,173.9 63.9,173.9" fill="#B0C8E0"/>
+<rect x="88" y="196" width="728" height="84" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<rect x="88" y="196" width="728" height="30" rx="8" fill="#0C3460"/><rect x="88" y="216" width="728" height="10" fill="#0C3460"/>
+<text x="452.0" y="215.0" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Test</text>
+<text x="452" y="254" font-size="10.5" fill="#1A2A3A" text-anchor="middle">Test custom policies: strength rating, sample input, and backtest against past sessions.</text>
+<circle cx="60" cy="212" r="13" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2"/>
+<text x="60" y="217" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">2</text>
+<line x1="60" y1="228" x2="60" y2="286" stroke="#B0C8E0" stroke-width="2" stroke-dasharray="6,4"/>
+<polygon points="60.0,286.0 56.1,277.9 63.9,277.9" fill="#B0C8E0"/>
+<rect x="88" y="300" width="728" height="84" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<rect x="88" y="300" width="728" height="30" rx="8" fill="#0B3A72"/><rect x="88" y="320" width="728" height="10" fill="#0B3A72"/>
+<text x="452.0" y="319.0" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Check readiness</text>
+<text x="452" y="358" font-size="10.5" fill="#1A2A3A" text-anchor="middle">Does the policy support Block, and does the connection block these message types?</text>
+<circle cx="60" cy="316" r="13" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2"/>
+<text x="60" y="321" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">3</text>
+<line x1="60" y1="332" x2="60" y2="390" stroke="#B0C8E0" stroke-width="2" stroke-dasharray="6,4"/>
+<polygon points="60.0,390.0 56.1,381.9 63.9,381.9" fill="#B0C8E0"/>
+<rect x="88" y="404" width="728" height="84" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
+<rect x="88" y="404" width="728" height="30" rx="8" fill="#0A4030"/><rect x="88" y="424" width="728" height="10" fill="#0A4030"/>
+<text x="452.0" y="423.0" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Block</text>
+<text x="452" y="462" font-size="10.5" fill="#1A2A3A" text-anchor="middle">Switch the policy to Block deliberately. Keep reviewing alerts and insights.</text>
+<circle cx="60" cy="420" r="13" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2"/>
+<text x="60" y="425" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">4</text>
+<rect x="88" y="516" width="728" height="86" rx="8" fill="#FFF4E5" stroke="#E8B04A" stroke-width="1.5"/>
+<text x="452" y="542" font-size="12" fill="#7A4A00" text-anchor="middle" font-weight="bold">Not ready? Stay in Monitor.</text>
+<text x="452" y="562" font-size="10" fill="#7A4A00" text-anchor="middle">On a connection that cannot block, Block behaves like Monitor: the action proceeds and an alert is generated.</text>
+<text x="452" y="577" font-size="10" fill="#7A4A00" text-anchor="middle">Blocking also fails open if a decision times out.</text>
+<rect x="0" y="618" width="840" height="22" fill="#0A2347"/><rect x="0" y="618" width="840" height="22" fill="#0A2347" rx="12"/><rect x="0" y="618" width="840" height="12" fill="#0A2347"/>
+<text x="24" y="632" font-size="9" fill="#8AACCC">Rubrik Security Cloud — Agent Cloud policy rollout</text>
+<rect width="840" height="640" fill="none" stroke="#09A8B8" stroke-width="5" rx="12"/></svg>
