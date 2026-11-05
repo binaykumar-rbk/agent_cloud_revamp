@@ -1,13 +1,13 @@
 <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="27.1">
-    <head><link rel="shortcut icon" href="../favicon.ico"/><link rel="icon" href="../favicon.ico"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="DC.rights.owner" content="(C) Copyright 2026"/><meta name="copyright" content="(C) Copyright 2026"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="concept"/><meta name="description" content="Agent Cloud is the RSC solution for governing autonomous AI agents — discovering them, monitoring their actions, enforcing policies, and reversing unauthorized data changes without taking systems offline."/><meta name="DC.relation" content="../okta/deleting_okta_snapshots.html"/><meta name="DC.relation" content="../agent_cloud/agent_cloud_overview.html"/><meta name="DC.relation" content="../agent_cloud/high_level_implementation_workflow.html"/><meta name="DC.relation" content="../agent_cloud/quick_links.html"/><meta name="DC.relation" content="../agent_cloud/plan_agent_cloud_deployment.html"/><meta name="DC.relation" content="../agent_cloud/configure_ai_connections.html"/><meta name="DC.relation" content="../agent_cloud/onboard_ai_operations.html"/><meta name="DC.relation" content="../agent_cloud/manage_agent_operations_policies.html"/><meta name="DC.relation" content="../agent_cloud/monitor_analyze_ai_agent_activity.html"/><meta name="DC.relation" content="../agent_cloud/rewind_agent_violations.html"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="agent_cloud_RSC"/>        
-      <title>Agent Cloud with RSC</title><!--  Generated with Oxygen version 27.1, build number 2025032023.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="agent_cloud_RSC-d30753e50676"/><meta name="wh-source-relpath" content="agent_cloud/agent_cloud_RSC.dita"/><meta name="wh-out-relpath" content="agent_cloud/agent_cloud_RSC.html"/>
+    <head><link rel="shortcut icon" href="../favicon.ico"/><link rel="icon" href="../favicon.ico"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="DC.rights.owner" content="(C) Copyright 2026"/><meta name="copyright" content="(C) Copyright 2026"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="concept"/><meta name="description" content="Agent Cloud with RSC provides a comprehensive solution for discovering AI agents in your environment, understanding which tools they have access to, detecting risky actions they perform on your data and configurations, and rewinding unauthorized changes without downtime."/><meta name="DC.relation" content="../identity_recovery/irec_hybrid_post_recovery_tasks.html"/><meta name="DC.relation" content="../agent_cloud/agent_cloud_overview.html"/><meta name="DC.relation" content="../agent_cloud/get_started_agent_cloud.html"/><meta name="DC.relation" content="../agent_cloud/agent_cloud_data_plane_provisioning.html"/><meta name="DC.relation" content="../agent_cloud/configure_ai_connections.html"/><meta name="DC.relation" content="../agent_cloud/discover_observe_agent_cloud.html"/><meta name="DC.relation" content="../agent_cloud/manage_agent_operations_policies.html"/><meta name="DC.relation" content="../agent_cloud/rewind_agent_violations.html"/><meta name="DC.relation" content="../agent_cloud/administer_agent_cloud.html"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="agent_cloud_RSC"/>        
+      <title>Agent Cloud with RSC</title><!--  Generated with Oxygen version 27.1, build number 2025032023.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="agent_cloud_RSC-d36908e59706"/><meta name="wh-source-relpath" content="agent_cloud/agent_cloud_RSC.dita"/><meta name="wh-out-relpath" content="agent_cloud/agent_cloud_RSC.html"/>
 
     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/commons.css?buildId=2025032023"/>
     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic.css?buildId=2025032023"/>
 
-    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20260718175330"></script>
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20261105232719"></script>
     <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2025032023"></script>
-    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20260718175330"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20261105232719"></script>
     <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2025032023"></script>
     <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2025032023"></script>
 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2025032023"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/html-tiles-style-en_min.css?buildId=2025032023"/>
@@ -31,59 +31,9 @@
             }</script>
         <!-- OneTrust Cookies Consent Notice end for docs.rubrik.com -->
     <script defer="true" src="../oxygen-webhelp/template/js/custom-collapsed-sections.js"></script>
-    <style>
-    .chapter-cards-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-      margin-top: 10px;
-    }
-    .intro-card-wrap, .phase-card-wrap {
-      border: 1px solid rgba(200,216,232,0.25);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-    .theme-light .intro-card-wrap,
-    .theme-light .phase-card-wrap { border-color: #C8D8E8; }
-    .intro-card-hd {
-      display: flex; align-items: center;
-      padding: 9px 14px; font-size: 11px; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.7px;
-      color: #fff; background: #1F4068;
-    }
-    .phase-card-hd {
-      display: flex; align-items: center; gap: 9px;
-      padding: 9px 14px; font-size: 11px; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.7px;
-      color: #fff; background: #0C3460;
-    }
-    .phase-badge {
-      display: flex; align-items: center; justify-content: center;
-      width: 20px; height: 20px; min-width: 20px; border-radius: 50%;
-      background: rgba(255,255,255,0.22); font-size: 10px; font-weight: 700; flex-shrink: 0;
-    }
-    .card-bd { padding: 12px 16px 16px; background: #EEF4FA; }
-    .card-bd ul { list-style: none; padding: 0; margin: 0; }
-    .card-bd ul li {
-      margin-bottom: 10px; padding-left: 14px;
-      position: relative; font-size: 13px; line-height: 1.4;
-    }
-    .card-bd ul li:last-child { margin-bottom: 0; }
-    .card-bd ul li::before {
-      content: "\25CF"; color: #09A8B8;
-      position: absolute; left: 0; font-size: 11px; top: 2px;
-    }
-    .card-bd ul li a { font-weight: 700; display: block; }
-    .card-link-desc { display: block; font-size: 11.5px; margin-top: 2px; line-height: 1.35; color: #4A6A8A; }
-    .chapter-cards dl.card-group { display: none !important; }
-    /* Equal-height cards — body fills full card */
-    .chapter-cards-grid { align-items: stretch; }
-    .intro-card-wrap, .phase-card-wrap { display: flex; flex-direction: column; height: 100%; }
-    .card-bd { flex: 1; }
-    </style>
 </head>
 
-    <body id="agent_cloud_RSC" class="wh_topic_page chapter-overview">
+    <body id="agent_cloud_RSC" class="wh_topic_page frmBody">
         <a href="#wh_topic_body" class="visually-hidden visually-hidden-focusable">
             Jump to main content
         </a>
@@ -166,7 +116,7 @@
                     
                     <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><div class="topicref"><div class="title"><a href="../agent_cloud/agent_cloud_RSC.html">Agent Cloud</a><div class="wh-tooltip"><p class="shortdesc">Detect risky actions caused on your data by autonomous AI agents, and rewind
                 the actions to repair changes to the data and configurations without
-                downtime.</p></div></div></div></li><li class="active"><div class="topicref" data-id="agent_cloud_RSC"><div class="title"><a href="../agent_cloud/agent_cloud_RSC.html"><span class="ph">Agent Cloud</span> with <span class="ph">RSC</span></a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Agent Cloud</span> is the <span class="ph">RSC</span> solution for governing autonomous         AI agents — discovering them, monitoring their actions, enforcing policies, and reversing         unauthorized data changes without taking systems offline.</p></div></div></div></li></ol></div>
+                downtime.</p></div></div></div></li><li class="active"><div class="topicref" data-id="agent_cloud_RSC"><div class="title"><a href="../agent_cloud/agent_cloud_RSC.html"><span class="ph">Agent Cloud</span> with <span class="ph">RSC</span></a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Agent Cloud</span> with <span class="ph">RSC</span> provides a comprehensive solution         for discovering AI agents in your environment, understanding which tools they have access         to, detecting risky actions they perform on your data and configurations, and rewinding         unauthorized changes without downtime.</p></div></div></div></li></ol></div>
                     
                     
                     
@@ -174,8 +124,8 @@
                         <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
                         <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
                         <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
-<span class="navprev"><a class="- topic/link link" href="../okta/deleting_okta_snapshots.html" title="Deleting Okta snapshots" aria-label="Previous topic: Deleting Okta snapshots" rel="prev"></a></span>  
-<span class="navnext"><a class="- topic/link link" href="../agent_cloud/agent_cloud_overview.html" title="Agent Cloud with RSC" aria-label="Next topic: Agent Cloud with RSC" rel="next"></a></span>  </span></div>
+<span class="navprev"><a class="- topic/link link" href="../identity_recovery/irec_hybrid_post_recovery_tasks.html" title="Post recovery tasks for hybrid identity environments" aria-label="Previous topic: Post recovery tasks for hybrid identity environments" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="../agent_cloud/agent_cloud_overview.html" title="Agent Cloud" aria-label="Next topic: Agent Cloud" rel="next"></a></span>  </span></div>
                         
                         
                         
@@ -203,23 +153,25 @@
 		                            </span>
 		                        </button>
 		                        
-                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e974" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e974-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/common/getting_started_with_rsc.html" id="tocId-d30753e974-link">Getting Started with RSC</a><div class="wh-tooltip"><p class="shortdesc">Set up initial configuration, network prerequisites, and primary
-                accounts.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e1661" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e1661-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/common/rubrik_clusters_2.html" id="tocId-d30753e1661-link">Rubrik Clusters</a><div class="wh-tooltip"><p class="shortdesc">Manage on-premises infrastructure, including cluster registration, CDM
-                upgrades, and hardware configuration.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e5081" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e5081-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/sla_domains.html" id="tocId-d30753e5081-link">Protection Policies</a><div class="wh-tooltip"><p class="shortdesc">Configure SLA Domains to define backup frequency, retention, archiving, and
-                replication schedules.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e9418" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e9418-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/users_access.html" id="tocId-d30753e9418-link">Security</a><div class="wh-tooltip"><p class="shortdesc">Configure and manage RSC security features, including user access, SSO,
-                Quorum Authorization, and data encryption.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e12567" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e12567-link" class="wh-expand-btn"></span><div class="title"><a href="../rubrik/supported_workloads.html" id="tocId-d30753e12567-link">Workloads</a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Rubrik Security Cloud - Data Protection</span> securely manages and protects data from a
-                wide variety of workload types.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e43919" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e43919-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/ri_ransomware_monitoring.html" id="tocId-d30753e43919-link">Cyber Resiliency</a><div class="wh-tooltip"><p class="shortdesc">Detect and govern risk using Threat Analytics and Data Security Posture.
-                Prepare for automated Orchestrated Application Recovery.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e47763" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e47763-link" class="wh-expand-btn"></span><div class="title"><a href="../identity_resilience/identity_resilience.html" id="tocId-d30753e47763-link">Identity Resiliency</a><div class="wh-tooltip"><p class="shortdesc">Secure, monitor, and recover hybrid identity providers, including Active
-                Directory, Microsoft Entra ID, and Okta.</p></div></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d30753e50670" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d30753e50670-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/agent_cloud_RSC.html" id="tocId-d30753e50670-link">Agent Cloud</a><div class="wh-tooltip"><p class="shortdesc">Detect risky actions caused on your data by autonomous AI agents, and rewind
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e1390" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e1390-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/common/getting_started_with_rsc.html" id="tocId-d36908e1390-link">Getting Started with RSC</a><div class="wh-tooltip"><p class="shortdesc">Set up initial configuration, network prerequisites, and primary
+                accounts.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e2151" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e2151-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/common/rubrik_clusters_2.html" id="tocId-d36908e2151-link">Rubrik Clusters</a><div class="wh-tooltip"><p class="shortdesc">Manage on-premises infrastructure, including cluster registration, CDM
+                upgrades, and hardware configuration.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e6152" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e6152-link" class="wh-expand-btn"></span><div class="title"><a href="../hadr/hadr_overview.html" id="tocId-d36908e6152-link">High Availability</a><div class="wh-tooltip"><p class="shortdesc">Configure High Availability to enable manual failover of Rubrik
+                cluster workloads for business continuity.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e6290" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e6290-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/sla_domains.html" id="tocId-d36908e6290-link">Protection Policies</a><div class="wh-tooltip"><p class="shortdesc">Configure SLA Domains to define backup frequency, retention, archiving, and
+                replication schedules.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e11849" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e11849-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/users_access.html" id="tocId-d36908e11849-link">Security</a><div class="wh-tooltip"><p class="shortdesc">Configure and manage RSC security features, including user access, SSO,
+                Quorum Authorization, and data encryption.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e15210" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e15210-link" class="wh-expand-btn"></span><div class="title"><a href="../rubrik/supported_workloads.html" id="tocId-d36908e15210-link">Workloads</a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Rubrik Security Cloud - Data Protection</span> securely manages and protects data from a
+                wide variety of workload types.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e51253" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e51253-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/ri_ransomware_monitoring.html" id="tocId-d36908e51253-link">Cyber Resiliency</a><div class="wh-tooltip"><p class="shortdesc">Detect and govern risk using Threat Analytics and Data Security Posture.
+                Prepare for automated Orchestrated Application Recovery.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e55324" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e55324-link" class="wh-expand-btn"></span><div class="title"><a href="../identity_resilience/identity_resilience.html" id="tocId-d36908e55324-link">Identity Resiliency</a><div class="wh-tooltip"><p class="shortdesc">Secure, monitor, and recover hybrid identity providers, including Active
+                Directory<span class="ph">, Microsoft Entra ID, and Okta</span>.</p></div></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d36908e59700" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d36908e59700-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/agent_cloud_RSC.html" id="tocId-d36908e59700-link">Agent Cloud</a><div class="wh-tooltip"><p class="shortdesc">Detect risky actions caused on your data by autonomous AI agents, and rewind
                 the actions to repair changes to the data and configurations without
-                downtime.</p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="true" class="active"><div data-tocid="agent_cloud_RSC-d30753e50676" class="topicref" data-id="agent_cloud_RSC" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action agent_cloud_RSC-d30753e50676-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/agent_cloud_RSC.html" id="agent_cloud_RSC-d30753e50676-link"><span class="ph">Agent Cloud</span> with <span class="ph">RSC</span></a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Agent Cloud</span> is the <span class="ph">RSC</span> solution for governing autonomous         AI agents — discovering them, monitoring their actions, enforcing policies, and reversing         unauthorized data changes without taking systems offline.</p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e50696" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e50696-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/agent_cloud_overview.html" id="tocId-d30753e50696-link">Introduction to Agent Cloud</a></div></div></li><li role="treeitem"><div data-tocid="high_level_implementation_workflow-d30753e50764" class="topicref" data-id="high_level_implementation_workflow" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/high_level_implementation_workflow.html" id="high_level_implementation_workflow-d30753e50764-link">High-level implementation workflow</a><div class="wh-tooltip"><p class="shortdesc">Follow this end-to-end workflow to set up <span class="ph">Agent Cloud</span>, connect your AI         platforms, configure governance, and begin monitoring AI agent activity in your         environment.</p></div></div></div></li><li role="treeitem"><div data-tocid="quick_links-d30753e50778" class="topicref" data-id="quick_links" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/quick_links.html" id="quick_links-d30753e50778-link">Quick links</a><div class="wh-tooltip"><p class="shortdesc">Quick access to the most common setup, governance, monitoring, and rewind tasks in             <span class="ph">Agent Cloud</span>.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="plan_agent_cloud_deployment-d30753e50792" class="topicref" data-id="plan_agent_cloud_deployment" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action plan_agent_cloud_deployment-d30753e50792-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/plan_agent_cloud_deployment.html" id="plan_agent_cloud_deployment-d30753e50792-link">Plan your <span class="ph">Agent Cloud</span> deployment</a><div class="wh-tooltip"><p class="shortdesc">Before connecting AI platforms or configuring policies, complete three planning steps:         confirm your environment meets the requirements, review best practices for your AI agents,         and decide where <span class="ph">Agent Cloud</span>'s data plane will run.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="configure_ai_connections-d30753e51138" class="topicref" data-id="configure_ai_connections" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action configure_ai_connections-d30753e51138-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/configure_ai_connections.html" id="configure_ai_connections-d30753e51138-link">Connect your AI platforms</a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Agent Cloud</span> connects to the AI platforms, frameworks, and agent         infrastructure in your environment. The connection method depends on whether your AI agents         use a native platform, endpoint detection, or a custom model gateway.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="onboard_ai_operations-d30753e51862" class="topicref" data-id="onboard_ai_operations" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action onboard_ai_operations-d30753e51862-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/onboard_ai_operations.html" id="onboard_ai_operations-d30753e51862-link">Onboard <span class="ph">Agent Cloud</span></a><div class="wh-tooltip"><p class="shortdesc">After setting up your data plane and configuring your AI platform connections,         complete onboarding in <span class="ph">RSC</span> to activate <span class="ph">Agent Cloud</span> in your         environment. Onboarding creates the model router that connects your agents to the LLM         providers <span class="ph">Agent Cloud</span> monitors.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="manage_agent_operations_policies-d30753e51901" class="topicref" data-id="manage_agent_operations_policies" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action manage_agent_operations_policies-d30753e51901-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/manage_agent_operations_policies.html" id="manage_agent_operations_policies-d30753e51901-link">Manage <span class="ph">Agent Cloud</span> policies</a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Agent Cloud</span> policies define the governance rules for AI agent behavior.         Enable system policies for broad protection, then create custom policies for requirements         specific to your organization.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="monitor_analyze_ai_agent_activity-d30753e52015" class="topicref" data-id="monitor_analyze_ai_agent_activity" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action monitor_analyze_ai_agent_activity-d30753e52015-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/monitor_analyze_ai_agent_activity.html" id="monitor_analyze_ai_agent_activity-d30753e52015-link">Monitor AI agent activity</a><div class="wh-tooltip"><p class="shortdesc">Use the <span class="ph">Agent Cloud</span> UI to maintain continuous visibility into what your         AI agents are doing, which tools they are using, and whether they are violating your         policies.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="rewind_agent_violations-d30753e52276" class="topicref" data-id="rewind_agent_violations" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action rewind_agent_violations-d30753e52276-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/rewind_agent_violations.html" id="rewind_agent_violations-d30753e52276-link">Rewind AI agent violations</a><div class="wh-tooltip"><p class="shortdesc">When an AI agent action causes an unintended or unauthorized data change, use <span class="ph">Agent Cloud</span>'s Rewind feature to reverse the specific change without restoring         the entire system.</p></div></div></div></li></ul></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e52304" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e52304-link" class="wh-expand-btn"></span><div class="title"><a href="../saas-ai/rubrik_ai_overview.html" id="tocId-d30753e52304-link">AI and Automation</a><div class="wh-tooltip"><p class="shortdesc">Use Rubrik AI and Annapurna for conversational interaction with your
-                environment, and access the GraphQL API Playground for scripting.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e52585" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e52585-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/integration_third_party_apps_in_rsc.html" id="tocId-d30753e52585-link">Integrations and License Usage</a><div class="wh-tooltip"><p class="shortdesc">Connect external systems, such as Zscaler and Okta ITP. Monitor consumption,
-                entitlements, and license usage.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e53230" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e53230-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/common/events.html" id="tocId-d30753e53230-link">Monitoring and Reporting</a><div class="wh-tooltip"><p class="shortdesc">Monitor live events, generate reports, check real-time system health using
-                dashboards, and configure notifications.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e55136" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e55136-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/rsc_insights.html" id="tocId-d30753e55136-link">Diagnostic Tools</a><div class="wh-tooltip"><p class="shortdesc">Access diagnostic solutions, such as Network Diagnostics, for operational
-                issues.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e55223" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e55223-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/mt_multitenancy.html" id="tocId-d30753e55223-link">Multitenancy</a><div class="wh-tooltip"><p class="shortdesc">Logically isolate shared resources to ensure organizations can only access
-                their specific data.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e56055" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e56055-link" class="wh-expand-btn"></span><div class="title"><a href="../rsc_ports/port_specs.html" id="tocId-d30753e56055-link">Port Specifications</a><div class="wh-tooltip"><p class="shortdesc">Port requirements for <span class="ph">RSC</span> deployments, organized by workload
+                downtime.</p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="true" class="active"><div data-tocid="agent_cloud_RSC-d36908e59706" class="topicref" data-id="agent_cloud_RSC" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action agent_cloud_RSC-d36908e59706-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/agent_cloud_RSC.html" id="agent_cloud_RSC-d36908e59706-link"><span class="ph">Agent Cloud</span> with <span class="ph">RSC</span></a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Agent Cloud</span> with <span class="ph">RSC</span> provides a comprehensive solution         for discovering AI agents in your environment, understanding which tools they have access         to, detecting risky actions they perform on your data and configurations, and rewinding         unauthorized changes without downtime.</p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e59726" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e59726-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/agent_cloud_overview.html" id="tocId-d36908e59726-link">Introduction to Agent Cloud</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="get_started_agent_cloud-d36908e59811" class="topicref" data-id="get_started_agent_cloud" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action get_started_agent_cloud-d36908e59811-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/get_started_agent_cloud.html" id="get_started_agent_cloud-d36908e59811-link">Get started with <span class="ph">Agent Cloud</span></a><div class="wh-tooltip"><p class="shortdesc">To start using <span class="ph">Agent Cloud</span>, confirm the prerequisites, deploy a data         plane, connect your agents, verify the setup, and then add policies.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="agent_cloud_data_plane_provisioning-d36908e59916" class="topicref" data-id="agent_cloud_data_plane_provisioning" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action agent_cloud_data_plane_provisioning-d36908e59916-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/agent_cloud_data_plane_provisioning.html" id="agent_cloud_data_plane_provisioning-d36908e59916-link">Choose your data plane</a><div class="wh-tooltip"><p class="shortdesc">The <span class="ph">Agent Cloud</span> data plane runs as a SaaS deployment that Rubrik         operates, or in your own AWS VPC or Azure VNet. Choose where it runs before you connect your         AI providers and agents.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="configure_ai_connections-d36908e60216" class="topicref" data-id="configure_ai_connections" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action configure_ai_connections-d36908e60216-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/configure_ai_connections.html" id="configure_ai_connections-d36908e60216-link">Connect your AI agents</a><div class="wh-tooltip"><p class="shortdesc">A connection links <span class="ph">Agent Cloud</span> to a source of agent activity, such as an         enterprise AI platform, a gateway that your custom agents use, or the endpoint detection         binary on employee devices.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="discover_observe_agent_cloud-d36908e61303" class="topicref" data-id="discover_observe_agent_cloud" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action discover_observe_agent_cloud-d36908e61303-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/discover_observe_agent_cloud.html" id="discover_observe_agent_cloud-d36908e61303-link">Discover and observe</a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Agent Cloud</span> builds an inventory of the agents, tools, identities, models,         and MCP servers in your environment, and records what each agent does, session by         session.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="manage_agent_operations_policies-d36908e61510" class="topicref" data-id="manage_agent_operations_policies" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action manage_agent_operations_policies-d36908e61510-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/manage_agent_operations_policies.html" id="manage_agent_operations_policies-d36908e61510-link">Manage <span class="ph">Agent Cloud</span> policies</a><div class="wh-tooltip"><p class="shortdesc"><span class="ph">Agent Cloud</span> policies are the governance rules that define the acceptable         behavior for your AI agents. Use them to detect risky activity and, on connections that         support it, stop it.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="rewind_agent_violations-d36908e61900" class="topicref" data-id="rewind_agent_violations" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action rewind_agent_violations-d36908e61900-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/rewind_agent_violations.html" id="rewind_agent_violations-d36908e61900-link">Rewind AI agent changes with <span class="ph">Agent Cloud</span></a><div class="wh-tooltip"><p class="shortdesc">Agent Rewind undoes the changes that an agent action made to your data by restoring         the affected objects from Rubrik backups, without rolling back the entire workload. Rewind         requires a complete Rubrik snapshot taken within seven days before the action.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="administer_agent_cloud-d36908e61935" class="topicref" data-id="administer_agent_cloud" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action administer_agent_cloud-d36908e61935-link" class="wh-expand-btn"></span><div class="title"><a href="../agent_cloud/administer_agent_cloud.html" id="administer_agent_cloud-d36908e61935-link">Administer Agent Cloud</a><div class="wh-tooltip"><p class="shortdesc">Control who can see and manage <span class="ph">Agent Cloud</span>, review platform and user         activity, understand who is responsible for each part of a deployment, and follow best         practices for rollout and for building agents that are easier to govern.</p></div></div></div></li></ul></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e62039" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e62039-link" class="wh-expand-btn"></span><div class="title"><a href="../saas-ai/rubrik_ai_overview.html" id="tocId-d36908e62039-link">AI and Automation</a><div class="wh-tooltip"><p class="shortdesc">Use Rubrik AI and Annapurna for conversational interaction with your
+                environment, connect external AI agents through Rubrik MCP, and access the GraphQL
+                API Playground for scripting.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e62334" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e62334-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/integration_third_party_apps_in_rsc.html" id="tocId-d36908e62334-link">Integrations and License Usage</a><div class="wh-tooltip"><p class="shortdesc">Connect external systems, such as Zscaler and Okta ITP. Monitor consumption,
+                entitlements, and license usage.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e63257" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e63257-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/common/events.html" id="tocId-d36908e63257-link">Monitoring and Reporting</a><div class="wh-tooltip"><p class="shortdesc">Monitor live events, generate reports, check real-time system health using
+                dashboards, and configure notifications.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e65293" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e65293-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/rsc_insights.html" id="tocId-d36908e65293-link">Diagnostic Tools</a><div class="wh-tooltip"><p class="shortdesc">Access diagnostic solutions, such as Network Diagnostics, for operational
+                issues.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e65380" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e65380-link" class="wh-expand-btn"></span><div class="title"><a href="../saas/mt_multitenancy.html" id="tocId-d36908e65380-link">Multitenancy</a><div class="wh-tooltip"><p class="shortdesc">Logically isolate shared resources to ensure organizations can only access
+                their specific data.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e66562" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e66562-link" class="wh-expand-btn"></span><div class="title"><a href="../rsc_ports/port_specs.html" id="tocId-d36908e66562-link">Port Specifications</a><div class="wh-tooltip"><p class="shortdesc">Port requirements for <span class="ph">RSC</span> deployments, organized by workload
                 type, Envoy organization network ports, and Rubrik cluster administration
-                ports.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d30753e56143" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d30753e56143-link" class="wh-expand-btn"></span><div class="title"><a href="../reuse/notices.html" id="tocId-d30753e56143-link">Additional Resources</a><div class="wh-tooltip"><p class="shortdesc">Access additional resources, such as Offline Recovery and Compatibility
+                ports.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d36908e66661" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d36908e66661-link" class="wh-expand-btn"></span><div class="title"><a href="../reuse/notices.html" id="tocId-d36908e66661-link">Additional Resources</a><div class="wh-tooltip"><p class="shortdesc">Access additional resources, such as Offline Recovery and Compatibility
                 Matrix guides.</p></div></div></div></li></ul></div>
 		                        
                             </div>
@@ -231,200 +183,100 @@
                         <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic concept/concept topic concept" role="article" aria-labelledby="ariaid-title1">
     <h1 class="- topic/title title topictitle1" id="ariaid-title1"><span class="- topic/ph ph">Agent Cloud</span> with <span class="- topic/ph ph">RSC</span></h1>
     
-    <div class="- topic/body concept/conbody body conbody"><p class="- topic/shortdesc shortdesc"><span class="- topic/ph ph">Agent Cloud</span> is the <span class="- topic/ph ph">RSC</span> solution for governing autonomous
-        AI agents — discovering them, monitoring their actions, enforcing policies, and reversing
-        unauthorized data changes without taking systems offline.</p>
-        <p class="- topic/p p">New to <span class="- topic/ph ph">Agent Cloud</span>? Start with <a class="- topic/xref xref" href="key_concepts_agent_operations.html" title="Information about the core components of Agent Cloud and how these components work together to provide observability, security, and remediation for your AI infrastructure.">Key concepts for Agent Cloud</a> to
-            understand how it works, then follow the <a class="- topic/xref xref" href="high_level_implementation_workflow.html" title="Follow this end-to-end workflow to set up Agent Cloud, connect your AI platforms, configure governance, and begin monitoring AI agent activity in your environment.">High-level implementation
-                workflow</a> for the end-to-end setup path. Already familiar? Go directly to the
-            phase that matches your current task.</p>
-        <section class="- topic/section section chapter-cards"><h2 class="- topic/title title sectiontitle">What's in this chapter</h2>
-            
-            <dl class="- topic/dl dl card-group">
-                
-                    <dt class="- topic/dt dt dlterm card-title">Learn</dt>
-                    <dd class="- topic/dd dd card-body">
+    <div class="- topic/body concept/conbody body conbody"><p class="- topic/shortdesc shortdesc"><span class="- topic/ph ph">Agent Cloud</span> with <span class="- topic/ph ph">RSC</span> provides a comprehensive solution
+        for discovering AI agents in your environment, understanding which tools they have access
+        to, detecting risky actions they perform on your data and configurations, and rewinding
+        unauthorized changes without downtime.</p>
+        <p class="- topic/p p">New to <span class="- topic/ph ph">Agent Cloud</span>? Start with <a class="- topic/xref xref" href="agent_cloud_overview.html" title="Agent Cloud detects risky actions caused on your data by autonomous AI agents, helps you find their root causes, and rewinds the actions to repair changes to the data and configurations without downtime.">Agent Cloud</a>, then
+            follow the <a class="- topic/xref xref" href="high_level_implementation_workflow.html" title="Set up Agent Cloud in this order: plan, choose a data plane, connect your agents, verify the setup, add policies, and then discover and rewind agent activity.">Agent Cloud implementation workflow</a>. Already familiar? Go
+            to the phase that matches your task.</p>
+        <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv chapter-cards">
+            <p class="- topic/p p chapter-cards-title">What is in this chapter</p>
+            <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card-group">
+                <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card">
+                    <p class="- topic/p p card-title">Learn</p>
+                    <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card-body">
                         <ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_overview.html" title="Agent Cloud with RSC provides a comprehensive solution for discovering AI agents in your environment, understanding which tools they have access to, detecting risky actions they perform on your data and configurations, and rewinding unauthorized changes without downtime."><span class="- topic/ph ph">Agent Cloud</span>
-                                    overview</a> — What Agent Cloud does and the problems it
-                                solves</li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="key_concepts_agent_operations.html" title="Information about the core components of Agent Cloud and how these components work together to provide observability, security, and remediation for your AI infrastructure.">Key concepts</a>
-                                — Core components and how they work together</li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="common_agent_operations_terms.html" title="It is important to understand some common terms when protecting AI agents with Agent Cloud.">Common
-                                    terms</a> — Quick-reference glossary</li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="tool_blocking_support.html" title="Tool blocking is an active enforcement feature that stops AI agents from executing tools that violate Agent Cloud policies in real time. Whether a connection supports tool blocking depends on the connection type — review the support table before configuring policies.">Tool blocking
-                                    support</a> — Which connections support real-time
-                                enforcement</li>
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_overview.html" title="Agent Cloud detects risky actions caused on your data by autonomous AI agents, helps you find their root causes, and rewinds the actions to repair changes to the data and configurations without downtime.">Agent Cloud</a> — what <span class="- topic/ph ph">Agent Cloud</span> does and the problems it solves.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="how_agent_cloud_works.html" title="Agent Cloud splits its work between a control plane in RSC and a data plane that processes agent traffic, and it connects to your agents in one of four ways.">How Agent Cloud works</a> — how discovery, policies, and rewind fit together.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="common_agent_operations_terms.html" title="Definitions of the terms used throughout the Agent Cloud documentation.">Common Agent Cloud terms</a> — the glossary of terms used in this guide.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="early_access_features_agent_cloud.html" title="Early access features are Agent Cloud features that are available before general availability to organizations that opt in.">Early access features</a> — features that are available in early access.</li>
                         </ul>
-                    </dd>
-                
-                
-                    <dt class="- topic/dt dt dlterm card-title">Getting started</dt>
-                    <dd class="- topic/dd dd card-body">
+                    </div>
+                </div>
+                <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card">
+                    <p class="- topic/p p card-title">Get started</p>
+                    <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card-body">
                         <ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="high_level_implementation_workflow.html" title="Follow this end-to-end workflow to set up Agent Cloud, connect your AI platforms, configure governance, and begin monitoring AI agent activity in your environment.">High-level implementation workflow</a> — End-to-end setup
-                                path, phase by phase</li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="quick_links.html" title="Quick access to the most common setup, governance, monitoring, and rewind tasks in Agent Cloud.">Quick links</a> — Fast access to
-                                the most common tasks</li>
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="get_started_agent_cloud.html" title="To start using Agent Cloud, confirm the prerequisites, deploy a data plane, connect your agents, verify the setup, and then add policies.">Get started with Agent Cloud</a> — the starting point for setup.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="high_level_implementation_workflow.html" title="Set up Agent Cloud in this order: plan, choose a data plane, connect your agents, verify the setup, add policies, and then discover and rewind agent activity.">Agent Cloud implementation workflow</a> — the ordered phases from planning to administration.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="deployment_checklist_agent_cloud.html" title="Use this pre-flight checklist to confirm that you have the access, network configuration, credentials, and protection in place before you deploy Agent Cloud.">Deployment checklist for Agent Cloud</a> — a checklist to track a deployment.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="quick_links.html" title="Go directly to the most-used tasks and information for setup, daily operations, and recovery.">Quick links for Agent Cloud</a> — shortcuts to common tasks.</li>
                         </ul>
-                    </dd>
-                
-                
-                    <dt class="- topic/dt dt dlterm card-title"><strong class="+ topic/ph hi-d/b ph b">1</strong> Plan</dt>
-                    <dd class="- topic/dd dd card-body">
+                    </div>
+                </div>
+                <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card phase-card">
+                    <p class="- topic/p p card-title"><strong class="+ topic/ph hi-d/b ph b">1</strong> Choose your data plane</p>
+                    <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card-body">
                         <ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_prerequisites.html" title="Confirm your RSC environment meets these requirements before setting up Agent Cloud.">Prerequisites</a> — Account and feature requirements</li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_best_practices.html" title="Before connecting AI agents to Agent Cloud, review these best practices. Applying them during development and configuration — rather than after — ensures Agent Cloud can accurately monitor, govern, and trace the actions of your agents.">Best
-                                    practices</a> — Agent naming, tool design, and identity
-                                standards</li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_deployment_provisioning_options.html" title="Agent Cloud's data plane — the component that processes agent traffic and enforces policies — runs either as a Rubrik-managed SaaS service or inside your own AWS or Azure VPC. Choose the option that fits your data residency requirements, cost model, and infrastructure.">Choose your data plane</a> — SaaS vs. VPC decision
-                                guide</li>
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_data_plane_provisioning.html" title="The Agent Cloud data plane runs as a SaaS deployment that Rubrik operates, or in your own AWS VPC or Azure VNet. Choose where it runs before you connect your AI providers and agents.">Choose your data plane</a> — choose between SaaS, AWS VPC, and Azure VNet.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="aws_azure_region_support.html" title="Agent Cloud supports regions across SaaS, AWS, and Azure deployments.">Region support for Agent Cloud</a> — supported regions.</li>
                         </ul>
-                    </dd>
-                
-                
-                    <dt class="- topic/dt dt dlterm card-title"><strong class="+ topic/ph hi-d/b ph b">2</strong> Connect</dt>
-                    <dd class="- topic/dd dd card-body">
+                    </div>
+                </div>
+                <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card phase-card">
+                    <p class="- topic/p p card-title"><strong class="+ topic/ph hi-d/b ph b">2</strong> Connect your AI agents</p>
+                    <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card-body">
                         <ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="native_integrations_agent_cloud.html" title="Connect AI platforms that have built-in agent capabilities to Agent Cloud. These platforms use cloud-to-cloud integrations that do not require deploying a model gateway.">Native
-                                    integrations and cloud platforms</a> — Copilot Studio,
-                                Gemini, Claude, M365 Copilot, ChatGPT, Foundry, Bedrock</li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="endpoint_detection_agent_cloud.html" title="Endpoint detection connects Agent Cloud to AI agents running on managed devices — desktops and laptops enrolled in an MDM system — so Agent Cloud can monitor their activity.">Endpoint
-                                    detection</a> — Monitor agents on managed devices</li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="custom_agents_deployed_agent_cloud.html" title="If your organization has built AI agents that call LLM APIs directly, connect them to Agent Cloud through a model gateway. A model gateway routes and monitors API traffic between your agents and the LLM, enabling Agent Cloud to enforce policies on custom agent behavior.">Custom
-                                    agents</a> — Deploy a model gateway for internally built
-                                agents</li>
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="configure_ai_connections.html" title="A connection links Agent Cloud to a source of agent activity, such as an enterprise AI platform, a gateway that your custom agents use, or the endpoint detection binary on employee devices.">Connect your AI agents</a> — connect enterprise AI platforms, custom agents, and endpoints.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="choose_how_to_connect_agents.html" title="The connection that you use for an agent depends on where the agent runs, and it determines whether Agent Cloud can block the agent's actions in real time.">Choose how to connect your agents</a> — choose the right connection.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_support_matrix.html" title="Find out what each Agent Cloud connection discovers, captures, and can block.">Agent Cloud support matrix</a> — what each connection supports.</li>
                         </ul>
-                    </dd>
-                
-                
-                    <dt class="- topic/dt dt dlterm card-title"><strong class="+ topic/ph hi-d/b ph b">3</strong> Onboard</dt>
-                    <dd class="- topic/dd dd card-body">
+                    </div>
+                </div>
+                <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card phase-card">
+                    <p class="- topic/p p card-title"><strong class="+ topic/ph hi-d/b ph b">3</strong> Discover and observe</p>
+                    <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card-body">
                         <ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="onboard_ai_operations.html" title="After setting up your data plane and configuring your AI platform connections, complete onboarding in RSC to activate Agent Cloud in your environment. Onboarding creates the model router that connects your agents to the LLM providers Agent Cloud monitors.">Onboard Agent
-                                    Cloud</a> — Activate monitoring in RSC</li>
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="discover_observe_agent_cloud.html" title="Agent Cloud builds an inventory of the agents, tools, identities, models, and MCP servers in your environment, and records what each agent does, session by session.">Discover and observe</a> — see what agents exist and what they do.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="ai_inventory_agent_cloud.html" title="The inventory lists everything that Agent Cloud has discovered across your connections: agents, tools, identities, models, and MCP servers.">AI inventory</a> — agents, tools, and models.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="sessions_actions_agent_cloud.html" title="Agent Cloud records what your agents do as sessions, each with a timeline of prompts, responses, and tool calls, and as actions, the individual tool calls within them.">Sessions and actions</a> — sessions and actions.</li>
                         </ul>
-                    </dd>
-                
-                
-                    <dt class="- topic/dt dt dlterm card-title"><strong class="+ topic/ph hi-d/b ph b">4</strong> Manage</dt>
-                    <dd class="- topic/dd dd card-body">
+                    </div>
+                </div>
+                <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card phase-card">
+                    <p class="- topic/p p card-title"><strong class="+ topic/ph hi-d/b ph b">4</strong> Govern and control</p>
+                    <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card-body">
                         <ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_system_policies.html" title="Agent Cloud includes 24 built-in system policies covering security, compliance, content safety, operational, and configuration governance. All system policies are disabled by default — review the list and enable the policies that apply to your environment.">Agent Cloud
-                                    system policies</a> — 24 built-in governance rules</li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="custom_policies.html" title="Custom policies allow you to extend Agent Cloud governance with site-specific rules that the system policies do not cover. You write these policies using natural language, and they are evaluated by an AI judge.">Custom policies</a> —
-                                Site-specific rules evaluated by an AI judge</li>
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="manage_agent_operations_policies.html" title="Agent Cloud policies are the governance rules that define the acceptable behavior for your AI agents. Use them to detect risky activity and, on connections that support it, stop it.">Manage Agent Cloud policies</a> — policies, packs, and alerts.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="plan_policy_rollout_agent_cloud.html" title="Introduce policies in Monitor mode, review the alerts they produce, and move a policy to Block only after it behaves as you expect and only on connections that support blocking.">Plan your policy rollout</a> — roll out policies safely.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="how_blocking_works_agent_cloud.html" title="A Block policy lets Agent Cloud stop an agent action before it takes effect, inline with the agent's own execution, instead of only flagging it afterward.">How blocking works</a> — how blocking works and where it fails open.</li>
                         </ul>
-                    </dd>
-                
-                
-                    <dt class="- topic/dt dt dlterm card-title"><strong class="+ topic/ph hi-d/b ph b">5</strong> Monitor</dt>
-                    <dd class="- topic/dd dd card-body">
+                    </div>
+                </div>
+                <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card phase-card">
+                    <p class="- topic/p p card-title"><strong class="+ topic/ph hi-d/b ph b">5</strong> Rewind agent actions</p>
+                    <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card-body">
                         <ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="dashboards_page.html" title="The Agent Cloud dashboard gives you an immediate summary of your AI agent environment — agents discovered, high-risk agents, active violations, and active alerts. Start here when you open Agent Cloud.">Agent Cloud
-                                    dashboard</a> — Environment overview</li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="inventory_page.html" title="The Inventory section shows every AI agent, tool, and model that Agent Cloud has discovered across all your connections. Use it to understand what is running in your environment, review tool authorization status, and identify agents or tools that need attention.">AI agent
-                                    inventory</a> — Discovered agents, tools, and models</li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="posture_page.html" title="The Posture section is where you triage and resolve policy violations. The Violations page shows what Agent Cloud flagged as non-compliant. The Insights page provides AI-generated analysis of agent behavior patterns with remediation recommendations.">Violations and
-                                    insights</a> — Triage policy violations</li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="runtime_page.html" title="The Runtime section provides real-time visibility into agent sessions, individual tool calls, and alerts. Use it to investigate a specific incident, trace the sequence of actions in a session, or triage open alerts.">Runtime
-                                    activity</a> — Sessions, actions, and alerts</li>
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="rewind_agent_violations.html" title="Agent Rewind undoes the changes that an agent action made to your data by restoring the affected objects from Rubrik backups, without rolling back the entire workload. Rewind requires a complete Rubrik snapshot taken within seven days before the action.">Rewind AI agent changes with Agent Cloud</a> — how Agent Rewind works and what it requires.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="supported_workloads_for_agent_rewind.html" title="Information about the workloads that Agent Rewind supports, including their restore scope, restore destination, and notes for each workload type.">Supported workloads for Agent Rewind</a> — which workloads you can rewind.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="rewind_agent_action.html" title="Undo the changes that an AI agent action made, by restoring the affected objects to their state before the action.">Rewinding an agent action</a> — rewind an action.</li>
                         </ul>
-                    </dd>
-                
-                
-                    <dt class="- topic/dt dt dlterm card-title"><strong class="+ topic/ph hi-d/b ph b">6</strong> Rewind</dt>
-                    <dd class="- topic/dd dd card-body">
+                    </div>
+                </div>
+                <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card phase-card">
+                    <p class="- topic/p p card-title"><strong class="+ topic/ph hi-d/b ph b">6</strong> Administer</p>
+                    <div class="- topic/bodydiv concept/conbodydiv bodydiv conbodydiv card-body">
                         <ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="rewind_ai_agent_action.html" title="Select an AI agent action from any page in Agent Cloud and rewind it to reverse the specific data change the action caused, without affecting any other part of the system.">Rewind an AI agent
-                                    action</a> — Reverse specific data changes without restoring
-                                entire systems</li>
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="administer_agent_cloud.html" title="Control who can see and manage Agent Cloud, review platform and user activity, understand who is responsible for each part of a deployment, and follow best practices for rollout and for building agents that are easier to govern.">Administer Agent Cloud</a> — administration overview.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="rac_rbac_overview.html" title="Agent Cloud separates seeing what it found from reading what agents said. Session content is the most sensitive data that Agent Cloud holds, so viewing it requires its own privilege, which no built-in role includes.">Access control for Agent Cloud</a> — roles and privileges.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="events_page_agent_cloud.html" title="The event log records platform activity in Agent Cloud, such as policy updates and connection changes. The audit log records who did what. Open both from the Events menu.">Event log and audit log</a> — event log and audit log.</li> 
+                            <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_best_practices.html" title="Follow these practices to roll out Agent Cloud safely and to get the most accurate inventory, monitoring, and enforcement for your agents.">Best practices for AI agents managed by Agent Cloud</a> — best practices.</li>
                         </ul>
-                    </dd>
-                
-            </dl>
-<div class="chapter-cards-grid">
-  <div class="intro-card-wrap">
-    <div class="intro-card-hd">Learn</div>
-    <div class="card-bd"><ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_overview.html">Agent Cloud overview</a><span class="card-link-desc">What Agent Cloud does and the problems it solves</span></li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="key_concepts_agent_operations.html">Key concepts</a><span class="card-link-desc">Core components and how they work together</span></li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="common_agent_operations_terms.html">Common terms</a><span class="card-link-desc">Quick-reference glossary</span></li>
-                        </ul></div>
-  </div>
-  <div class="intro-card-wrap">
-    <div class="intro-card-hd">Getting started</div>
-    <div class="card-bd"><ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="high_level_implementation_workflow.html" title="Follow this end-to-end workflow to set up Agent Cloud, connect your AI platforms, configure governance, and begin monitoring AI agent activity in your environment.">High-level implementation workflow</a><span class="card-link-desc">End-to-end setup
-                                path, phase by phase</span></li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="quick_links.html" title="Quick access to the most common setup, governance, monitoring, and rewind tasks in Agent Cloud.">Quick links</a><span class="card-link-desc">Fast access to
-                                the most common tasks</span></li>
-                        </ul></div>
-  </div>
-  <div class="phase-card-wrap">
-    <div class="phase-card-hd"><span class="phase-badge">1</span>Plan</div>
-    <div class="card-bd"><ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_prerequisites.html" title="Confirm your RSC environment meets these requirements before setting up Agent Cloud.">Prerequisites</a><span class="card-link-desc">Account and feature requirements</span></li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_best_practices.html" title="Before connecting AI agents to Agent Cloud, review these best practices. Applying them during development and configuration — rather than after — ensures Agent Cloud can accurately monitor, govern, and trace the actions of your agents.">Best
-                                    practices</a><span class="card-link-desc">Agent naming, tool design, and identity
-                                standards</span></li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_deployment_provisioning_options.html" title="Agent Cloud's data plane — the component that processes agent traffic and enforces policies — runs either as a Rubrik-managed SaaS service or inside your own AWS or Azure VPC. Choose the option that fits your data residency requirements, cost model, and infrastructure.">Choose your data plane</a><span class="card-link-desc">SaaS vs. VPC decision
-                                guide</span></li>
-                        </ul></div>
-  </div>
-  <div class="phase-card-wrap">
-    <div class="phase-card-hd"><span class="phase-badge">2</span>Connect</div>
-    <div class="card-bd"><ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="native_integrations_agent_cloud.html" title="Connect AI platforms that have built-in agent capabilities to Agent Cloud. These platforms use cloud-to-cloud integrations that do not require deploying a model gateway.">Native
-                                    integrations and cloud platforms</a><span class="card-link-desc">Copilot Studio,
-                                Gemini, Claude, M365 Copilot, ChatGPT, Foundry, Bedrock</span></li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="endpoint_detection_agent_cloud.html" title="Endpoint detection connects Agent Cloud to AI agents running on managed devices — desktops and laptops enrolled in an MDM system — so Agent Cloud can monitor their activity.">Endpoint
-                                    detection</a><span class="card-link-desc">Monitor agents on managed devices</span></li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="custom_agents_deployed_agent_cloud.html" title="If your organization has built AI agents that call LLM APIs directly, connect them to Agent Cloud through a model gateway. A model gateway routes and monitors API traffic between your agents and the LLM, enabling Agent Cloud to enforce policies on custom agent behavior.">Custom
-                                    agents</a><span class="card-link-desc">Deploy a model gateway for internally built
-                                agents</span></li>
-                        </ul></div>
-  </div>
-  <div class="phase-card-wrap">
-    <div class="phase-card-hd"><span class="phase-badge">3</span>Onboard</div>
-    <div class="card-bd"><ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="onboard_ai_operations.html" title="After setting up your data plane and configuring your AI platform connections, complete onboarding in RSC to activate Agent Cloud in your environment. Onboarding creates the model router that connects your agents to the LLM providers Agent Cloud monitors.">Onboard Agent
-                                    Cloud</a><span class="card-link-desc">Activate monitoring in RSC</span></li>
-                        </ul></div>
-  </div>
-  <div class="phase-card-wrap">
-    <div class="phase-card-hd"><span class="phase-badge">4</span>Manage</div>
-    <div class="card-bd"><ul class="- topic/ul ul">
-                            
-          <li class="- topic/li li"><a class="- topic/xref xref" href="tool_blocking_support.html">Tool blocking support</a><span class="card-link-desc">Which connections support real-time enforcement</span></li>
-          <li class="- topic/li li"><a class="- topic/xref xref" href="agent_cloud_system_policies.html" title="Agent Cloud includes 24 built-in system policies covering security, compliance, content safety, operational, and configuration governance. All system policies are disabled by default — review the list and enable the policies that apply to your environment.">Agent Cloud
-                                    system policies</a><span class="card-link-desc">24 built-in governance rules</span></li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="custom_policies.html" title="Custom policies allow you to extend Agent Cloud governance with site-specific rules that the system policies do not cover. You write these policies using natural language, and they are evaluated by an AI judge.">Custom policies</a><span class="card-link-desc">Site-specific rules evaluated by an AI judge</span></li>
-                        </ul></div>
-  </div>
-  <div class="phase-card-wrap">
-    <div class="phase-card-hd"><span class="phase-badge">5</span>Monitor</div>
-    <div class="card-bd"><ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="dashboards_page.html" title="The Agent Cloud dashboard gives you an immediate summary of your AI agent environment — agents discovered, high-risk agents, active violations, and active alerts. Start here when you open Agent Cloud.">Agent Cloud
-                                    dashboard</a><span class="card-link-desc">Environment overview</span></li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="inventory_page.html" title="The Inventory section shows every AI agent, tool, and model that Agent Cloud has discovered across all your connections. Use it to understand what is running in your environment, review tool authorization status, and identify agents or tools that need attention.">AI agent
-                                    inventory</a><span class="card-link-desc">Discovered agents, tools, and models</span></li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="posture_page.html" title="The Posture section is where you triage and resolve policy violations. The Violations page shows what Agent Cloud flagged as non-compliant. The Insights page provides AI-generated analysis of agent behavior patterns with remediation recommendations.">Violations and
-                                    insights</a><span class="card-link-desc">Triage policy violations</span></li>
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="runtime_page.html" title="The Runtime section provides real-time visibility into agent sessions, individual tool calls, and alerts. Use it to investigate a specific incident, trace the sequence of actions in a session, or triage open alerts.">Runtime
-                                    activity</a><span class="card-link-desc">Sessions, actions, and alerts</span></li>
-                        </ul></div>
-  </div>
-  <div class="phase-card-wrap">
-    <div class="phase-card-hd"><span class="phase-badge">6</span>Rewind</div>
-    <div class="card-bd"><ul class="- topic/ul ul">
-                            <li class="- topic/li li"><a class="- topic/xref xref" href="rewind_ai_agent_action.html" title="Select an AI agent action from any page in Agent Cloud and rewind it to reverse the specific data change the action caused, without affecting any other part of the system.">Rewind an AI agent
-                                    action</a><span class="card-link-desc">Reverse specific data changes without restoring
-                                entire systems</span></li>
-                        </ul></div>
-  </div>
-</div>
-        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </article></main></div>
                         
