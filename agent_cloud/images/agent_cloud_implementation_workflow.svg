@@ -26,11 +26,11 @@
 <text x="458" y="239" font-size="10" fill="#1A2A3A" text-anchor="middle">Choose how to connect your agents</text>
 <line x1="60" y1="128" x2="60" y2="279" stroke="#B0C8E0" stroke-width="2"/>
 <polygon points="53,275 60,283 67,275" fill="#09A8B8"/>
-<!-- Phase 2: Choose your data plane -->
+<!-- Phase 2: Deploy your data plane -->
 <rect x="88" y="283" width="728" height="163" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
 <rect x="88" y="283" width="728" height="36" rx="8" fill="#0C3460"/>
 <rect x="88" y="307" width="728" height="12" fill="#0C3460"/>
-<text x="452" y="307" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Choose your data plane</text>
+<text x="452" y="307" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Deploy your data plane</text>
 <text x="452" y="337" font-size="10" fill="#4A6A8A" text-anchor="middle">Decide where agent traffic and session content are processed.</text>
 <circle cx="60" cy="301" r="22" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2.5"/>
 <text x="60" y="307" font-size="16" font-weight="bold" fill="#09A8B8" text-anchor="middle">2</text>
@@ -51,9 +51,9 @@
 <circle cx="60" cy="496" r="22" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2.5"/>
 <text x="60" y="502" font-size="16" font-weight="bold" fill="#09A8B8" text-anchor="middle">3</text>
 <rect x="108" y="548" width="700" height="28" rx="5" fill="#EEF4FA" stroke="#C8D8E8" stroke-width="1"/>
-<text x="458" y="567" font-size="10" fill="#1A2A3A" text-anchor="middle">Enterprise AI platforms</text>
+<text x="458" y="567" font-size="10" fill="#1A2A3A" text-anchor="middle">Builder platforms and enterprise apps</text>
 <rect x="108" y="579" width="700" height="28" rx="5" fill="#EEF4FA" stroke="#C8D8E8" stroke-width="1"/>
-<text x="458" y="598" font-size="10" fill="#1A2A3A" text-anchor="middle">Custom agents</text>
+<text x="458" y="598" font-size="10" fill="#1A2A3A" text-anchor="middle">AI gateways</text>
 <rect x="108" y="610" width="700" height="28" rx="5" fill="#EEF4FA" stroke="#C8D8E8" stroke-width="1"/>
 <text x="458" y="629" font-size="10" fill="#1A2A3A" text-anchor="middle">Endpoint detection</text>
 <line x1="60" y1="518" x2="60" y2="669" stroke="#B0C8E0" stroke-width="2"/>
