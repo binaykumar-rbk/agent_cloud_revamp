@@ -14,50 +14,57 @@
 <circle cx="322" cy="120" r="13" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2"/>
 <text x="322" y="125" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">2</text>
 <text x="342" y="125" font-size="12" fill="#0A2347" text-anchor="start" font-weight="bold">Plan your rollout</text>
-<text x="420" y="152" font-size="10" fill="#4A6A8A" text-anchor="middle">Start in Monitor</text>
+<text x="420" y="152" font-size="10" fill="#4A6A8A" text-anchor="middle">Test in Monitor first,</text>
+<text x="420" y="166" font-size="10" fill="#4A6A8A" text-anchor="middle">then decide what to Block</text>
 <rect x="576" y="96" width="240" height="84" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
 <circle cx="598" cy="120" r="13" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2"/>
 <text x="598" y="125" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">3</text>
 <text x="618" y="125" font-size="12" fill="#0A2347" text-anchor="start" font-weight="bold">Choose a mode</text>
-<text x="696" y="152" font-size="10" fill="#4A6A8A" text-anchor="middle">Monitor or Block</text>
+<text x="696" y="152" font-size="10" fill="#4A6A8A" text-anchor="middle">Set each policy to</text>
+<text x="696" y="166" font-size="10" fill="#4A6A8A" text-anchor="middle">Monitor or Block</text>
 <line x1="264" y1="138" x2="300" y2="138" stroke="#B0C8E0" stroke-width="2"/>
 <polygon points="300.0,138.0 291.9,141.9 291.9,134.1" fill="#B0C8E0"/>
 <line x1="540" y1="138" x2="576" y2="138" stroke="#B0C8E0" stroke-width="2"/>
 <polygon points="576.0,138.0 567.9,141.9 567.9,134.1" fill="#B0C8E0"/>
-<rect x="440" y="208" width="182" height="82" rx="8" fill="#E8F7F0" stroke="#21AA7A" stroke-width="1.5"/>
-<text x="531" y="232" font-size="12" fill="#0A4030" text-anchor="middle" font-weight="bold">Monitor</text>
-<text x="531" y="252" font-size="10" fill="#1A2A3A" text-anchor="middle">Records alerts and violations</text>
-<text x="531" y="266" font-size="10" fill="#1A2A3A" text-anchor="middle">Start here</text>
-<rect x="634" y="208" width="182" height="82" rx="8" fill="#FDECEC" stroke="#B03030" stroke-width="1.5"/>
-<text x="725" y="232" font-size="12" fill="#8A1F1F" text-anchor="middle" font-weight="bold">Block</text>
-<text x="725" y="252" font-size="10" fill="#1A2A3A" text-anchor="middle">Stops the action, on</text>
-<text x="725" y="266" font-size="10" fill="#1A2A3A" text-anchor="middle">connections that support it</text>
-<line x1="660" y1="180" x2="531" y2="208" stroke="#B0C8E0" stroke-width="2"/>
-<polygon points="531.0,208.0 538.1,202.5 539.7,210.1" fill="#B0C8E0"/>
-<line x1="740" y1="180" x2="725" y2="208" stroke="#B0C8E0" stroke-width="2"/>
-<polygon points="725.0,208.0 725.4,199.0 732.3,202.7" fill="#B0C8E0"/>
+<rect x="576" y="208" width="114" height="96" rx="8" fill="#E8F7F0" stroke="#21AA7A" stroke-width="1.5"/>
+<text x="633" y="230" font-size="12" fill="#0A4030" text-anchor="middle" font-weight="bold">Monitor</text>
+<text x="633" y="248" font-size="10" fill="#1A2A3A" text-anchor="middle">Records alerts</text>
+<text x="633" y="261" font-size="10" fill="#1A2A3A" text-anchor="middle">and violations</text>
+<text x="633" y="280" font-size="10" fill="#1A2A3A" text-anchor="middle" font-weight="bold">New policies</text>
+<text x="633" y="293" font-size="10" fill="#1A2A3A" text-anchor="middle" font-weight="bold">start here</text>
+<rect x="702" y="208" width="114" height="96" rx="8" fill="#FDECEC" stroke="#B03030" stroke-width="1.5"/>
+<text x="759" y="230" font-size="12" fill="#8A1F1F" text-anchor="middle" font-weight="bold">Block</text>
+<text x="759" y="248" font-size="10" fill="#1A2A3A" text-anchor="middle">Stops the action</text>
+<text x="759" y="261" font-size="10" fill="#1A2A3A" text-anchor="middle">where supported.</text>
+<text x="759" y="278" font-size="10" fill="#1A2A3A" text-anchor="middle" font-weight="bold">Elsewhere it acts</text>
+<text x="759" y="291" font-size="10" fill="#1A2A3A" text-anchor="middle" font-weight="bold">like Monitor</text>
+<line x1="633" y1="180" x2="633" y2="200" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="633,208 629,200 637,200" fill="#B0C8E0"/>
+<line x1="759" y1="180" x2="759" y2="200" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="759,208 755,200 763,200" fill="#B0C8E0"/>
 <rect x="576" y="330" width="240" height="84" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
 <circle cx="598" cy="354" r="13" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2"/>
 <text x="598" y="359" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">4</text>
 <text x="618" y="359" font-size="12" fill="#0A2347" text-anchor="start" font-weight="bold">Add system policies</text>
-<text x="696" y="386" font-size="10" fill="#4A6A8A" text-anchor="middle">Or policy packs. Not enabled</text>
-<text x="696" y="400" font-size="10" fill="#4A6A8A" text-anchor="middle">by default</text>
+<text x="696" y="377" font-size="10" fill="#4A6A8A" text-anchor="middle">Rubrik-provided. Off until you</text>
+<text x="696" y="390" font-size="10" fill="#4A6A8A" text-anchor="middle">enable them, one by one or</text>
+<text x="696" y="403" font-size="10" fill="#4A6A8A" text-anchor="middle">in groups with policy packs</text>
 <rect x="300" y="330" width="240" height="84" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
 <circle cx="322" cy="354" r="13" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2"/>
 <text x="322" y="359" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">5</text>
 <text x="342" y="359" font-size="12" fill="#0A2347" text-anchor="start" font-weight="bold">Add custom policies</text>
-<text x="420" y="386" font-size="10" fill="#4A6A8A" text-anchor="middle">Natural language. New</text>
-<text x="420" y="400" font-size="10" fill="#4A6A8A" text-anchor="middle">policies start in Monitor</text>
+<text x="420" y="386" font-size="10" fill="#4A6A8A" text-anchor="middle">Write your own rules in</text>
+<text x="420" y="400" font-size="10" fill="#4A6A8A" text-anchor="middle">natural language</text>
 <rect x="24" y="330" width="240" height="84" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1"/>
 <circle cx="46" cy="354" r="13" fill="#F4F7FA" stroke="#09A8B8" stroke-width="2"/>
 <text x="46" y="359" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">6</text>
 <text x="66" y="359" font-size="12" fill="#0A2347" text-anchor="start" font-weight="bold">Triage</text>
-<text x="144" y="386" font-size="10" fill="#4A6A8A" text-anchor="middle">Alerts and violations,</text>
-<text x="144" y="400" font-size="10" fill="#4A6A8A" text-anchor="middle">prioritized by severity</text>
-<line x1="531" y1="290" x2="650" y2="330" stroke="#B0C8E0" stroke-width="2"/>
-<polygon points="650.0,330.0 641.1,331.1 643.6,323.7" fill="#B0C8E0"/>
-<line x1="725" y1="290" x2="740" y2="330" stroke="#B0C8E0" stroke-width="2"/>
-<polygon points="740.0,330.0 733.5,323.8 740.8,321.0" fill="#B0C8E0"/>
+<text x="144" y="386" font-size="10" fill="#4A6A8A" text-anchor="middle">Review and act on</text>
+<text x="144" y="400" font-size="10" fill="#4A6A8A" text-anchor="middle">alerts and violations</text>
+<line x1="633" y1="304" x2="633" y2="322" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="633,330 629,322 637,322" fill="#B0C8E0"/>
+<line x1="759" y1="304" x2="759" y2="322" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="759,330 755,322 763,322" fill="#B0C8E0"/>
 <line x1="576" y1="372" x2="540" y2="372" stroke="#B0C8E0" stroke-width="2"/>
 <polygon points="540.0,372.0 548.1,368.1 548.1,375.9" fill="#B0C8E0"/>
 <line x1="300" y1="372" x2="264" y2="372" stroke="#B0C8E0" stroke-width="2"/>

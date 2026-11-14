@@ -46,12 +46,12 @@
 <polygon points="420.0,246.0 423.9,254.1 416.1,254.1" fill="#09A8B8"/>
 <text x="426" y="282" font-size="10" fill="#4A6A8A" text-anchor="start">Uploads enriched</text>
 <text x="426" y="295" font-size="10" fill="#4A6A8A" text-anchor="start">metadata</text>
-<line x1="130" y1="455" x2="180" y2="442" stroke="#0A2347" stroke-width="2"/>
-<polygon points="180.0,442.0 173.1,447.8 171.2,440.3" fill="#0A2347"/>
-<line x1="130" y1="500" x2="180" y2="512" stroke="#0A2347" stroke-width="2"/>
-<polygon points="180.0,512.0 171.2,513.9 173.0,506.3" fill="#0A2347"/>
-<line x1="440" y1="422" x2="520" y2="436" stroke="#0A2347" stroke-width="2"/>
-<polygon points="520.0,436.0 511.3,438.5 512.7,430.7" fill="#0A2347"/>
+<line x1="130" y1="450" x2="180" y2="450" stroke="#0A2347" stroke-width="2"/>
+<polygon points="180,450 172,446.1 172,453.9" fill="#0A2347"/>
+<line x1="130" y1="505" x2="180" y2="505" stroke="#0A2347" stroke-width="2"/>
+<polygon points="180,505 172,501.1 172,508.9" fill="#0A2347"/>
+<line x1="440" y1="432" x2="520" y2="432" stroke="#0A2347" stroke-width="2"/>
+<polygon points="520,432 512,428.1 512,435.9" fill="#0A2347"/>
 <line x1="300" y1="458" x2="520" y2="458" stroke="#0A2347" stroke-width="2"/>
 <polygon points="520.0,458.0 511.9,461.9 511.9,454.1" fill="#0A2347"/>
 <line x1="460" y1="520" x2="700" y2="520" stroke="#0A2347" stroke-width="2"/>

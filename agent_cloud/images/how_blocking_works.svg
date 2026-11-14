@@ -28,16 +28,21 @@
 <text x="646" y="231" font-size="13" fill="#09A8B8" text-anchor="middle" font-weight="bold">4</text>
 <text x="728" y="230" font-size="12" fill="#0A2347" text-anchor="middle" font-weight="bold">Agent response</text>
 <text x="720" y="256" font-size="10" fill="#4A6A8A" text-anchor="middle">Before it reaches the user</text>
-<line x1="420" y1="276" x2="420" y2="310" stroke="#B0C8E0" stroke-width="2"/>
-<polygon points="420.0,310.0 416.1,301.9 423.9,301.9" fill="#B0C8E0"/>
+<line x1="120" y1="274" x2="120" y2="292" stroke="#B0C8E0" stroke-width="2"/>
+<line x1="320" y1="274" x2="320" y2="292" stroke="#B0C8E0" stroke-width="2"/>
+<line x1="520" y1="274" x2="520" y2="292" stroke="#B0C8E0" stroke-width="2"/>
+<line x1="720" y1="274" x2="720" y2="292" stroke="#B0C8E0" stroke-width="2"/>
+<line x1="120" y1="292" x2="720" y2="292" stroke="#B0C8E0" stroke-width="2"/>
+<line x1="420" y1="292" x2="420" y2="304" stroke="#B0C8E0" stroke-width="2"/>
+<polygon points="420,312 416.1,304 423.9,304" fill="#B0C8E0"/>
 <rect x="220" y="312" width="400" height="76" rx="8" fill="#EEF4FA" stroke="#09A8B8" stroke-width="1.5"/>
 <text x="420" y="336" font-size="11.5" fill="#0A2347" text-anchor="middle" font-weight="bold">Agent Cloud checks the item against your active Block policies</text>
 <text x="420" y="356" font-size="10" fill="#1A2A3A" text-anchor="middle">Structured rules (tool, agent, or model) are matched directly.</text>
 <text x="420" y="370" font-size="10" fill="#1A2A3A" text-anchor="middle">SAGE judges custom natural-language policies inline.</text>
-<line x1="320" y1="390" x2="200" y2="452" stroke="#B03030" stroke-width="2.5"/>
-<polygon points="200.0,452.0 205.4,444.8 209.0,451.8" fill="#B03030"/>
-<line x1="520" y1="390" x2="640" y2="452" stroke="#21AA7A" stroke-width="2.5"/>
-<polygon points="640.0,452.0 631.0,451.8 634.6,444.8" fill="#21AA7A"/>
+<line x1="320" y1="388" x2="320" y2="446" stroke="#B03030" stroke-width="2.5"/>
+<polygon points="320,454 316.1,446 323.9,446" fill="#B03030"/>
+<line x1="520" y1="388" x2="520" y2="446" stroke="#21AA7A" stroke-width="2.5"/>
+<polygon points="520,454 516.1,446 523.9,446" fill="#21AA7A"/>
 <rect x="24" y="454" width="352" height="92" rx="8" fill="#FDECEC" stroke="#B03030" stroke-width="1.5"/>
 <text x="200" y="478" font-size="12" fill="#8A1F1F" text-anchor="middle" font-weight="bold">A Block policy denies the item</text>
 <text x="200" y="498" font-size="10.5" fill="#1A2A3A" text-anchor="middle">Agent Cloud withholds that one item.</text>
